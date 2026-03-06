@@ -16,6 +16,7 @@
     <ul class="nav__links">
       <li><a href="#inicio" class="nav__link">início</a></li>
       <li><a href="#habilidades" class="nav__link">habilidades</a></li>
+      <li><a href="#experiencia" class="nav__link">experiência</a></li>
       <li><a href="#jornada" class="nav__link">jornada</a></li>
       <li><a href="#biblioteca" class="nav__link">biblioteca</a></li>
       <li><a href="#contato" class="nav__link">contato</a></li>
@@ -29,6 +30,7 @@
     <ul>
       <li><a href="#inicio" class="mobile-menu__link">início</a></li>
       <li><a href="#habilidades" class="mobile-menu__link">habilidades</a></li>
+      <li><a href="#experiencia" class="mobile-menu__link">experiência</a></li>
       <li><a href="#jornada" class="mobile-menu__link">jornada</a></li>
       <li><a href="#biblioteca" class="mobile-menu__link">biblioteca</a></li>
       <li><a href="#contato" class="mobile-menu__link">contato</a></li>
@@ -37,21 +39,48 @@
 
   <main>
 
+    <!-- HERO -->
     <section class="hero" id="inicio">
-      <div class="hero__content">
-        <p class="hero__eyebrow reveal-element">Desenvolvedor & Estudante de Engenharia de Software</p>
-        <h1 class="hero__name reveal-element">Bruno Miotto</h1>
-        <p class="hero__summary reveal-element">
-          21 anos, de Caxias do Sul — RS.<br>
-          Foco em <strong>otimização de sistemas</strong> e <strong>correções estruturais</strong>.
-        </p>
-        <div class="hero__cta reveal-element">
-          <a href="#habilidades" class="btn btn--primary">Ver habilidades</a>
-          <a href="#contato" class="btn btn--ghost">Contato</a>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <div class="hero__status reveal-element">
+            <span class="hero__status-dot"></span>
+            <span>Disponível para projetos</span>
+          </div>
+          <h1 class="hero__name reveal-element">Bruno Miotto</h1>
+          <p class="hero__role reveal-element">Desenvolvedor & Estudante de Engenharia de Software</p>
+          <p class="hero__summary reveal-element">
+            21 anos, de Caxias do Sul — RS. Foco em <strong>otimização de sistemas</strong> e <strong>correções estruturais</strong> para elevar performance de ponta a ponta.
+          </p>
+          <div class="hero__meta reveal-element">
+            <div class="hero__meta-item">
+              <img src="https://www.google.com/s2/favicons?sz=32&domain=windel.com.br" alt="Windel" class="hero__meta-favicon" />
+              <div>
+                <span class="hero__meta-label">Empresa</span>
+                <span class="hero__meta-value">Windel Sistemas</span>
+              </div>
+            </div>
+            <div class="hero__meta-divider"></div>
+            <div class="hero__meta-item">
+              <img src="https://www.google.com/s2/favicons?sz=32&domain=ucs.br" alt="UCS" class="hero__meta-favicon" />
+              <div>
+                <span class="hero__meta-label">Faculdade</span>
+                <span class="hero__meta-value">UCS — Eng. de Software</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__cta reveal-element">
+            <a href="#habilidades" class="btn btn--primary">Ver habilidades</a>
+            <a href="#contato" class="btn btn--ghost">Contato</a>
+          </div>
+        </div>
+        <div class="hero__photo reveal-element">
+          <img src="data:image/jpeg;base64,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" alt="Bruno Miotto" />
         </div>
       </div>
     </section>
 
+    <!-- HABILIDADES -->
     <section class="section" id="habilidades">
       <div class="container">
         <h2 class="section__title reveal-element">Habilidades</h2>
@@ -59,11 +88,10 @@
 
         <div class="skills__sections">
 
-  
+          <!-- TRABALHO -->
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title">Trabalho</h3>
             <div class="skill-cards">
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/delphi/delphi-original.svg" alt="Delphi" />
@@ -71,7 +99,6 @@
                 <span class="skill-item__name">Delphi</span>
                 <span class="skill-item__desc">Desenvolvimento e manutenção de sistemas</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/sourcetree/0052CC" alt="SourceTree" />
@@ -79,15 +106,13 @@
                 <span class="skill-item__name">SourceTree</span>
                 <span class="skill-item__desc">Controle de versão e Git visual</span>
               </div>
-
             </div>
           </div>
 
-      
+          <!-- LINGUAGENS -->
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title">Linguagens</h3>
             <div class="skill-cards">
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
@@ -95,7 +120,6 @@
                 <span class="skill-item__name">HTML</span>
                 <span class="skill-item__desc">Estrutura e marcação semântica</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
@@ -103,7 +127,6 @@
                 <span class="skill-item__name">CSS</span>
                 <span class="skill-item__desc">Estilização e layouts responsivos</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
@@ -111,7 +134,6 @@
                 <span class="skill-item__name">JavaScript</span>
                 <span class="skill-item__desc">Interatividade e lógica front-end</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
@@ -119,7 +141,6 @@
                 <span class="skill-item__name">TypeScript</span>
                 <span class="skill-item__desc">JavaScript tipado e escalável</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
@@ -127,7 +148,6 @@
                 <span class="skill-item__name">Python</span>
                 <span class="skill-item__desc">Scripts, automação e IA</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
@@ -135,7 +155,6 @@
                 <span class="skill-item__name">C</span>
                 <span class="skill-item__desc">Programação de baixo nível</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/delphi/delphi-original.svg" alt="Delphi" />
@@ -143,14 +162,13 @@
                 <span class="skill-item__name">Delphi / Pascal</span>
                 <span class="skill-item__desc">Linguagem orientada a objetos</span>
               </div>
-
             </div>
           </div>
 
+          <!-- FERRAMENTAS & INTEGRAÇÕES -->
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title">Ferramentas & Integrações</h3>
             <div class="skill-cards">
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" />
@@ -158,15 +176,13 @@
                 <span class="skill-item__name">n8n</span>
                 <span class="skill-item__desc">Automação de fluxos e workflows</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
                 </div>
                 <span class="skill-item__name">Supabase</span>
-                <span class="skill-item__desc">Backend as a service, banco de dados</span>
+                <span class="skill-item__desc">Backend as a service e banco de dados</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--blue">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -174,10 +190,9 @@
                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
                   </svg>
                 </div>
-                <span class="skill-item__name">APIs</span>
-                <span class="skill-item__desc">Consumo e integração REST</span>
+                <span class="skill-item__name">APIs REST</span>
+                <span class="skill-item__desc">Consumo e integração de APIs</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--green">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -191,15 +206,13 @@
                 <span class="skill-item__name">Webhooks</span>
                 <span class="skill-item__desc">Eventos e comunicação entre sistemas</span>
               </div>
-
             </div>
           </div>
 
-         
+          <!-- IA -->
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title">Ferramentas de IA</h3>
             <div class="skill-cards">
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/anthropic/D97757" alt="Claude" />
@@ -207,7 +220,6 @@
                 <span class="skill-item__name">Claude</span>
                 <span class="skill-item__desc">IA da Anthropic, coding e análise</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/googlegemini/4285F4" alt="Gemini" />
@@ -215,39 +227,37 @@
                 <span class="skill-item__name">Gemini</span>
                 <span class="skill-item__desc">IA do Google, pesquisa e geração</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
-                  <img src="https://cdn.simpleicons.org/cursor/000000" alt="Cursor" style="filter: invert(1);" />
+                  <img src="https://cdn.simpleicons.org/cursor/FFFFFF" alt="Cursor" />
                 </div>
                 <span class="skill-item__name">Cursor</span>
                 <span class="skill-item__desc">Editor com IA integrada para código</span>
               </div>
-
               <div class="skill-item">
-                <div class="skill-item__icon">
-                  <img src="https://cdn.simpleicons.org/lovable/FF3D57" alt="Lovable" />
+                <div class="skill-item__icon icon-bg--lovable">
+                  <img src="https://lovable.dev/favicon.ico" alt="Lovable"
+                    onerror="this.parentElement.innerHTML='<svg viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'100\' height=\'100\' rx=\'20\' fill=\'#FF3D57\'/><text x=\'50\' y=\'62\' font-size=\'38\' text-anchor=\'middle\' fill=\'white\' font-family=\'Arial\' font-weight=\'bold\'>L</text></svg>'" />
                 </div>
                 <span class="skill-item__name">Lovable</span>
                 <span class="skill-item__desc">Geração de apps full-stack com IA</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon">
-                  <img src="https://cdn.simpleicons.org/googlenotebooklm/4285F4" alt="NotebookLM" />
+                  <img src="https://logo.svgcdn.com/simple-icons/notebooklm-dark.svg" alt="NotebookLM"
+                    style="filter: brightness(0) invert(0.5) sepia(1) saturate(3) hue-rotate(180deg);"
+                    onerror="this.src='https://www.gstatic.com/lamda/images/notebooklm_favicon_v1_66fa86b85e23.png'" />
                 </div>
                 <span class="skill-item__name">NotebookLM</span>
                 <span class="skill-item__desc">Pesquisa e síntese de documentos</span>
               </div>
-
             </div>
           </div>
 
-          
+          <!-- CRIAÇÃO -->
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title">Criação & Conteúdo</h3>
             <div class="skill-cards">
-
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva" />
@@ -255,7 +265,6 @@
                 <span class="skill-item__name">Canva</span>
                 <span class="skill-item__desc">Design e conteúdo para redes sociais</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--purple">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -267,7 +276,6 @@
                 <span class="skill-item__name">Edição de Imagens</span>
                 <span class="skill-item__desc">Tratamento e ajuste de fotos</span>
               </div>
-
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--red">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -278,7 +286,6 @@
                 <span class="skill-item__name">Edição de Vídeos</span>
                 <span class="skill-item__desc">Corte, montagem e pós-produção</span>
               </div>
-
             </div>
           </div>
 
@@ -286,10 +293,44 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="jornada">
+    <!-- EXPERIÊNCIA -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <h2 class="section__title reveal-element">Experiência & Formação</h2>
+        <p class="section__sub reveal-element">Onde trabalho e estudo.</p>
+
+        <div class="xp-grid">
+          <div class="xp-card reveal-element">
+            <div class="xp-card__logo">
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=windel.com.br" alt="Windel Sistemas" />
+            </div>
+            <div class="xp-card__info">
+              <span class="xp-card__type">Trabalho</span>
+              <h3 class="xp-card__name">Windel Sistemas</h3>
+              <p class="xp-card__role">Desenvolvedor Delphi</p>
+              <p class="xp-card__desc">Otimização de sistemas e aplicação de correções estruturais em software de gestão ERP para micro e pequenas empresas. Caxias do Sul, RS.</p>
+            </div>
+          </div>
+          <div class="xp-card reveal-element">
+            <div class="xp-card__logo">
+              <img src="https://www.google.com/s2/favicons?sz=64&domain=ucs.br" alt="UCS" />
+            </div>
+            <div class="xp-card__info">
+              <span class="xp-card__type">Graduação</span>
+              <h3 class="xp-card__name">Universidade de Caxias do Sul</h3>
+              <p class="xp-card__role">Engenharia de Software</p>
+              <p class="xp-card__desc">Ingressando no 2º semestre. Formação técnica e teórica em desenvolvimento, arquitetura de software e engenharia de sistemas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JORNADA -->
+    <section class="section" id="jornada">
       <div class="container">
         <h2 class="section__title reveal-element">Jornada Acadêmica</h2>
-        <p class="section__sub reveal-element">Engenharia de Software — UCS · 2º semestre</p>
+        <p class="section__sub reveal-element">Engenharia de Software — UCS · cursando desde 2023/2</p>
 
         <div class="tabs reveal-element">
           <div class="tabs__nav" role="tablist">
@@ -298,46 +339,108 @@
             <button class="tabs__btn" data-tab="proximos" role="tab">Próximas</button>
             <div class="tabs__indicator" id="tabsIndicator"></div>
           </div>
-
           <div class="tabs__panel tabs__panel--active" id="tab-concluidas" role="tabpanel">
-            <ul class="course-list">
-              <li class="course-item course-item--done">Introdução à Computação</li>
-              <li class="course-item course-item--done">Algoritmos e Lógica de Programação</li>
-              <li class="course-item course-item--done">Fundamentos de Engenharia de Software</li>
-              <li class="course-item course-item--done">Matemática Discreta</li>
-            </ul>
+            <div class="course-grid-labeled">
+              <div class="course-semester-group">
+                <span class="course-semester-label">2023/2</span>
+                <ul class="course-list">
+                  <li class="course-item course-item--done"><span class="course-name">Direito Digital</span><span class="course-grade">B</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Tópicos de Ciências Exatas</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Programação de Computadores I</span><span class="course-grade">B</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Lógica para Computação</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Matemática Discreta</span><span class="course-grade">A</span></li>
+                </ul>
+              </div>
+              <div class="course-semester-group">
+                <span class="course-semester-label">2023/4</span>
+                <ul class="course-list">
+                  <li class="course-item course-item--done"><span class="course-name">Introdução à Computação e as Tecnologias</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Sociedade, Cultura e Cidadania</span><span class="course-grade">F</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Programação de Computadores II</span><span class="course-grade">C</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Cálculo Diferencial e Integral I</span><span class="course-grade">B</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Sistemas Digitais I</span><span class="course-grade">B</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Teoria da Computação</span><span class="course-grade">A</span></li>
+                </ul>
+              </div>
+              <div class="course-semester-group">
+                <span class="course-semester-label">2024/2</span>
+                <ul class="course-list">
+                  <li class="course-item course-item--done"><span class="course-name">Estatística</span><span class="course-grade">E</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Fundamentos de Arquitetura de Computadores</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Programação Orientada a Objetos</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Algoritmos e Estrutura de Dados I</span><span class="course-grade">B</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Projeto Temático I</span><span class="course-grade">H</span></li>
+                </ul>
+              </div>
+              <div class="course-semester-group">
+                <span class="course-semester-label">2024/4</span>
+                <ul class="course-list">
+                  <li class="course-item course-item--done"><span class="course-name">Fundamentos de Banco de Dados</span><span class="course-grade">B</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Fundamentos de Engenharia de Software</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Arquitetura de Computadores</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Projeto de Vida e Carreira</span><span class="course-grade">B</span></li>
+                </ul>
+              </div>
+              <div class="course-semester-group">
+                <span class="course-semester-label">2025/2</span>
+                <ul class="course-list">
+                  <li class="course-item course-item--done"><span class="course-name">Projeto e Arquitetura de Software</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Fundamentos de Sistemas Operacionais</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Processo de Desenvolvimento de Software</span><span class="course-grade">H</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Laboratório de Software</span><span class="course-grade">A</span></li>
+                </ul>
+              </div>
+              <div class="course-semester-group">
+                <span class="course-semester-label">2025/4</span>
+                <ul class="course-list">
+                  <li class="course-item course-item--done"><span class="course-name">Gerência de Configuração</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Programação de Aplicações Web I</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Computação Aplicada I</span><span class="course-grade">A</span></li>
+                  <li class="course-item course-item--done"><span class="course-name">Teoria e Metodologia da Ciência</span><span class="course-grade">A</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="tabs__panel" id="tab-cursando" role="tabpanel">
-            <ul class="course-list">
-              <li class="course-item course-item--current">Estruturas de Dados</li>
-              <li class="course-item course-item--current">Programação Orientada a Objetos</li>
-              <li class="course-item course-item--current">Cálculo I</li>
-              <li class="course-item course-item--current">Arquitetura e Organização de Computadores</li>
-            </ul>
+            <div class="course-semester-group">
+              <span class="course-semester-label">2026/2</span>
+              <ul class="course-list">
+                <li class="course-item course-item--current"><span class="course-name">Qualidade de Software</span></li>
+                <li class="course-item course-item--current"><span class="course-name">Fundamentos de Inteligência Artificial</span></li>
+                <li class="course-item course-item--current"><span class="course-name">Integração de Aplicações</span></li>
+                <li class="course-item course-item--current"><span class="course-name">Programação de Aplicações Web II</span></li>
+              </ul>
+            </div>
           </div>
 
           <div class="tabs__panel" id="tab-proximos" role="tabpanel">
             <ul class="course-list">
-              <li class="course-item course-item--future">Banco de Dados</li>
-              <li class="course-item course-item--future">Engenharia de Requisitos</li>
-              <li class="course-item course-item--future">Redes de Computadores</li>
-              <li class="course-item course-item--future">Sistemas Operacionais</li>
-              <li class="course-item course-item--future">Desenvolvimento Web</li>
-              <li class="course-item course-item--future">Inteligência Artificial</li>
+              <li class="course-item course-item--future"><span class="course-name">Fundamentos de Redes de Computadores</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Inteligência Computacional</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Projeto Temático II</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Programação para Dispositivos Móveis</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Interface Humano Computador</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Segurança da Informação</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Teste de Software</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Banco de Dados</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Gestão de Projetos</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Empreendedorismo</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Projeto Temático III</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Trabalho de Conclusão de Curso I</span></li>
+              <li class="course-item course-item--future"><span class="course-name">Trabalho de Conclusão de Curso II</span></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="biblioteca">
+    <!-- BIBLIOTECA -->
+    <section class="section section--alt" id="biblioteca">
       <div class="container">
         <h2 class="section__title reveal-element">Biblioteca</h2>
         <p class="section__sub reveal-element">Leituras que moldaram minha forma de pensar.</p>
-
         <div class="books__grid">
-
           <div class="book-card reveal-element">
             <div class="book-card__cover">
               <img src="https://covers.openlibrary.org/b/isbn/020161622X-L.jpg" alt="O Programador Pragmático" />
@@ -348,7 +451,6 @@
               <p class="book-card__comment">Um guia direto sobre como pensar e trabalhar como desenvolvedor. Mudou minha forma de encarar código e qualidade de software.</p>
             </div>
           </div>
-
           <div class="book-card reveal-element">
             <div class="book-card__cover">
               <img src="https://covers.openlibrary.org/b/isbn/9788575225639-L.jpg" alt="Entendendo Algoritmos" />
@@ -359,7 +461,6 @@
               <p class="book-card__comment">Didático e visual. A melhor introdução a algoritmos que já li. Essencial para qualquer programador.</p>
             </div>
           </div>
-
           <div class="book-card reveal-element">
             <div class="book-card__cover">
               <img src="https://covers.openlibrary.org/b/isbn/9781476748986-L.jpg" alt="Can't Hurt Me" />
@@ -370,7 +471,6 @@
               <p class="book-card__comment">Uma aula de mentalidade. Goggins prova que os limites que aceitamos são quase sempre autoinduzidos.</p>
             </div>
           </div>
-
           <div class="book-card reveal-element">
             <div class="book-card__cover">
               <img src="https://covers.openlibrary.org/b/isbn/9781594204968-L.jpg" alt="Eleven Rings" />
@@ -381,7 +481,6 @@
               <p class="book-card__comment">Propósito compartilhado é o que constrói times extraordinários.</p>
             </div>
           </div>
-
           <div class="book-card reveal-element">
             <div class="book-card__cover">
               <img src="https://covers.openlibrary.org/b/isbn/9781328663795-L.jpg" alt="Invent and Wander" />
@@ -392,7 +491,6 @@
               <p class="book-card__comment">Pensar em décadas, não em trimestres. Um manual de como construir algo duradouro.</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -405,12 +503,13 @@
       <div class="footer__links reveal-element">
         <a href="https://linkedin.com/in/brunomiotto" target="_blank" rel="noopener" class="footer__link">LinkedIn ↗</a>
         <a href="https://github.com/brunomiotto" target="_blank" rel="noopener" class="footer__link">GitHub ↗</a>
-        <a href="mailto:brunomiotto@email.com" class="footer__link">E-mail ↗</a>
+        <a href="/cdn-cgi/l/email-protection#f694848398999b9f99828299b6939b979f9ad895999b" class="footer__link">E-mail ↗</a>
       </div>
       <p class="footer__copy">© 2025 Bruno Miotto — Caxias do Sul, RS</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
