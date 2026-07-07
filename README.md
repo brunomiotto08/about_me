@@ -82,7 +82,7 @@ Direct links to [LinkedIn](https://linkedin.com/in/brunomiotto08), [GitHub](http
 | Scripting | Vanilla JavaScript (ES6+, IIFE modules) |
 | Typography | [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts |
 | Icons | [Devicon](https://devicon.dev/) + inline SVGs + Simple Icons CDN |
-| Images | Local assets (`profile.jpeg`, `UCS.png`) + external CDNs |
+| Images | Local assets (`assets/profile/`, `UCS.png`) + external CDNs |
 
 **No dependencies.** No npm, no bundler, no framework. Clone and open.
 
@@ -95,8 +95,11 @@ about_me/
 ├── index.html      # Main page — all sections and content
 ├── style.css       # Global styles, layout, components, animations
 ├── script.js       # Navigation, mobile menu, smooth scroll, tabs, reveal
-├── profile.jpeg    # Profile photo
-├── profile2.jpeg   # Alternate profile photo (unused in current layout)
+├── assets/
+│   ├── profile/
+│   │   ├── profile.jpeg   # Profile photo
+│   │   └── profile2.jpeg  # Alternate profile photo (unused in current layout)
+│   └── portfolio/         # Project screenshots
 ├── UCS.png         # Universidade de Caxias do Sul logo
 └── README.md       # This file
 ```
@@ -199,7 +202,7 @@ To adapt this site for your own use (or to update my information):
 4. **Courses** — edit the tab panels under `#jornada`
 5. **Books** — modify `.book-card` entries; cover images use Open Library ISBN URLs
 6. **Colors & fonts** — adjust CSS custom properties in `:root` at the top of `style.css`
-7. **Profile photo** — replace `profile.jpeg` (recommended: square, ~220×220px display size)
+7. **Profile photo** — replace `assets/profile/profile.jpeg` (recommended: square, ~220×220px display size)
 
 ---
 
