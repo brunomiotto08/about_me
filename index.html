@@ -10,33 +10,45 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-i18n-title="meta.title">
 
   <nav class="nav" id="nav">
     <ul class="nav__links">
-      <li><a href="#inicio" class="nav__link">início</a></li>
-      <li><a href="#habilidades" class="nav__link">habilidades</a></li>
-      <li><a href="#experiencia" class="nav__link">experiência</a></li>
-      <li><a href="#portfolio" class="nav__link">portfólio</a></li>
-      <li><a href="#jornada" class="nav__link">jornada</a></li>
-      <li><a href="#biblioteca" class="nav__link">biblioteca</a></li>
-      <li><a href="#contato" class="nav__link">contato</a></li>
+      <li><a href="#inicio" class="nav__link" data-i18n="nav.home">início</a></li>
+      <li><a href="#habilidades" class="nav__link" data-i18n="nav.skills">habilidades</a></li>
+      <li><a href="#experiencia" class="nav__link" data-i18n="nav.experience">experiência</a></li>
+      <li><a href="#portfolio" class="nav__link" data-i18n="nav.portfolio">portfólio</a></li>
+      <li><a href="#jornada" class="nav__link" data-i18n="nav.journey">jornada</a></li>
+      <li><a href="#biblioteca" class="nav__link" data-i18n="nav.library">biblioteca</a></li>
+      <li><a href="#contato" class="nav__link" data-i18n="nav.contact">contato</a></li>
     </ul>
-    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span>
-    </button>
+    <div class="nav__actions">
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:aria.lang">
+        <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+        <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+        <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" data-i18n-attr="aria-label:aria.menu">
+        <span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="#inicio" class="mobile-menu__link">início</a></li>
-      <li><a href="#habilidades" class="mobile-menu__link">habilidades</a></li>
-      <li><a href="#experiencia" class="mobile-menu__link">experiência</a></li>
-      <li><a href="#portfolio" class="mobile-menu__link">portfólio</a></li>
-      <li><a href="#jornada" class="mobile-menu__link">jornada</a></li>
-      <li><a href="#biblioteca" class="mobile-menu__link">biblioteca</a></li>
-      <li><a href="#contato" class="mobile-menu__link">contato</a></li>
+      <li><a href="#inicio" class="mobile-menu__link" data-i18n="nav.home">início</a></li>
+      <li><a href="#habilidades" class="mobile-menu__link" data-i18n="nav.skills">habilidades</a></li>
+      <li><a href="#experiencia" class="mobile-menu__link" data-i18n="nav.experience">experiência</a></li>
+      <li><a href="#portfolio" class="mobile-menu__link" data-i18n="nav.portfolio">portfólio</a></li>
+      <li><a href="#jornada" class="mobile-menu__link" data-i18n="nav.journey">jornada</a></li>
+      <li><a href="#biblioteca" class="mobile-menu__link" data-i18n="nav.library">biblioteca</a></li>
+      <li><a href="#contato" class="mobile-menu__link" data-i18n="nav.contact">contato</a></li>
     </ul>
+    <div class="lang-switch lang-switch--mobile" role="group" data-i18n-attr="aria-label:aria.lang">
+      <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+      <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+      <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
+    </div>
   </div>
 
   <main>
@@ -47,18 +59,18 @@
         <div class="hero__text">
           <div class="hero__status reveal-element">
             <span class="hero__status-dot"></span>
-            <span>Disponível para projetos</span>
+            <span data-i18n="hero.status">Disponível para projetos</span>
           </div>
           <h1 class="hero__name reveal-element">Bruno Miotto</h1>
-          <p class="hero__role reveal-element">Desenvolvedor & Estudante de Engenharia de Software</p>
-          <p class="hero__summary reveal-element">
-            <strong> 21 anos, de Caxias do Sul — RS.</strong> 
+          <p class="hero__role reveal-element" data-i18n="hero.role">Desenvolvedor & Estudante de Engenharia de Software</p>
+          <p class="hero__summary reveal-element" data-i18n-html="hero.summary">
+            <strong>21 anos, de Caxias do Sul — RS.</strong>
           </p>
           <div class="hero__meta reveal-element">
             <div class="hero__meta-item">
               <img src="https://www.google.com/s2/favicons?sz=32&domain=windel.com.br" alt="Windel" class="hero__meta-favicon" />
               <div>
-                <span class="hero__meta-label">Empresa</span>
+                <span class="hero__meta-label" data-i18n="hero.meta.company">Empresa</span>
                 <span class="hero__meta-value">Windel Sistemas</span>
               </div>
             </div>
@@ -66,7 +78,7 @@
             <div class="hero__meta-item">
               <img src="UCS.png" alt="" class="hero__meta-favicon">
               <div>
-                <span class="hero__meta-label">Faculdade</span>
+                <span class="hero__meta-label" data-i18n="hero.meta.college">Faculdade</span>
                 <span class="hero__meta-value">UCS — Eng. de Software</span>
               </div>
             </div>
@@ -74,14 +86,14 @@
             <div class="hero__meta-item">
               <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" class="hero__meta-favicon" />
               <div>
-                <span class="hero__meta-label">Contato</span>
+                <span class="hero__meta-label" data-i18n="hero.meta.contact">Contato</span>
                 <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="hero__meta-value hero__meta-value--link">+55 (54) 99925-2321</a>
               </div>
             </div>
           </div>
           <div class="hero__cta reveal-element">
-            <a href="#habilidades" class="btn btn--primary">Ver habilidades</a>
-            <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="btn btn--ghost">Fale comigo</a>
+            <a href="#habilidades" class="btn btn--primary" data-i18n="hero.cta.skills">Ver habilidades</a>
+            <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="hero.cta.talk">Fale comigo</a>
           </div>
         </div>
         <div class="hero__photo reveal-element">
@@ -93,28 +105,28 @@
     <!-- HABILIDADES -->
     <section class="section" id="habilidades">
       <div class="container">
-        <h2 class="section__title reveal-element">Habilidades</h2>
-        <p class="section__sub reveal-element">Ferramentas, linguagens e tecnologias que fazem parte do meu dia a dia.</p>
+        <h2 class="section__title reveal-element" data-i18n="skills.title">Habilidades</h2>
+        <p class="section__sub reveal-element" data-i18n="skills.sub">Ferramentas, linguagens e tecnologias que fazem parte do meu dia a dia.</p>
 
         <div class="skills__sections">
 
           <!-- TRABALHO -->
           <div class="skill-group reveal-element">
-            <h3 class="skill-group__title">Trabalho</h3>
+            <h3 class="skill-group__title" data-i18n="skills.work">Trabalho</h3>
             <div class="skill-cards">
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/delphi/delphi-original.svg" alt="Delphi" />
                 </div>
                 <span class="skill-item__name">Delphi</span>
-                <span class="skill-item__desc">Desenvolvimento e manutenção de sistemas</span>
+                <span class="skill-item__desc" data-i18n="skill.delphi.desc">Desenvolvimento e manutenção de sistemas</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/sourcetree/0052CC" alt="SourceTree" />
                 </div>
                 <span class="skill-item__name">SourceTree</span>
-                <span class="skill-item__desc">Controle de versão e Git visual</span>
+                <span class="skill-item__desc" data-i18n="skill.sourcetree.desc">Controle de versão e Git visual</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
@@ -122,84 +134,84 @@
                     onerror="this.src='https://img.icons8.com/?size=100&id=1349&format=png&color=FF6B35'" />
                 </div>
                 <span class="skill-item__name">Firebird</span>
-                <span class="skill-item__desc">Banco de dados relacional</span>
+                <span class="skill-item__desc" data-i18n="skill.firebird.desc">Banco de dados relacional</span>
               </div>
             </div>
           </div>
 
           <!-- LINGUAGENS -->
           <div class="skill-group reveal-element">
-            <h3 class="skill-group__title">Linguagens</h3>
+            <h3 class="skill-group__title" data-i18n="skills.languages">Linguagens</h3>
             <div class="skill-cards">
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
                 </div>
                 <span class="skill-item__name">HTML</span>
-                <span class="skill-item__desc">Estrutura e marcação semântica</span>
+                <span class="skill-item__desc" data-i18n="skill.html.desc">Estrutura e marcação semântica</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
                 </div>
                 <span class="skill-item__name">CSS</span>
-                <span class="skill-item__desc">Estilização e layouts responsivos</span>
+                <span class="skill-item__desc" data-i18n="skill.css.desc">Estilização e layouts responsivos</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
                 </div>
                 <span class="skill-item__name">JavaScript</span>
-                <span class="skill-item__desc">Interatividade e lógica front-end</span>
+                <span class="skill-item__desc" data-i18n="skill.js.desc">Interatividade e lógica front-end</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
                 </div>
                 <span class="skill-item__name">TypeScript</span>
-                <span class="skill-item__desc">JavaScript tipado e escalável</span>
+                <span class="skill-item__desc" data-i18n="skill.ts.desc">JavaScript tipado e escalável</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
                 </div>
                 <span class="skill-item__name">Python</span>
-                <span class="skill-item__desc">Scripts, automação e IA</span>
+                <span class="skill-item__desc" data-i18n="skill.python.desc">Scripts, automação e IA</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
                 </div>
                 <span class="skill-item__name">C</span>
-                <span class="skill-item__desc">Programação de baixo nível</span>
+                <span class="skill-item__desc" data-i18n="skill.c.desc">Programação de baixo nível</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/delphi/delphi-original.svg" alt="Delphi" />
                 </div>
                 <span class="skill-item__name">Delphi / Pascal</span>
-                <span class="skill-item__desc">Linguagem orientada a objetos</span>
+                <span class="skill-item__desc" data-i18n="skill.delphi2.desc">Linguagem orientada a objetos</span>
               </div>
             </div>
           </div>
 
           <!-- FERRAMENTAS & INTEGRAÇÕES -->
           <div class="skill-group reveal-element">
-            <h3 class="skill-group__title">Ferramentas & Integrações</h3>
+            <h3 class="skill-group__title" data-i18n="skills.tools">Ferramentas & Integrações</h3>
             <div class="skill-cards">
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" />
                 </div>
                 <span class="skill-item__name">n8n</span>
-                <span class="skill-item__desc">Automação de fluxos e workflows</span>
+                <span class="skill-item__desc" data-i18n="skill.n8n.desc">Automação de fluxos e workflows</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
                 </div>
                 <span class="skill-item__name">Supabase</span>
-                <span class="skill-item__desc">Backend as a service e banco de dados</span>
+                <span class="skill-item__desc" data-i18n="skill.supabase.desc">Backend as a service e banco de dados</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--blue">
@@ -209,7 +221,7 @@
                   </svg>
                 </div>
                 <span class="skill-item__name">APIs REST</span>
-                <span class="skill-item__desc">Consumo e integração de APIs</span>
+                <span class="skill-item__desc" data-i18n="skill.rest.desc">Consumo e integração de APIs</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--green">
@@ -222,35 +234,35 @@
                   </svg>
                 </div>
                 <span class="skill-item__name">Webhooks</span>
-                <span class="skill-item__desc">Eventos e comunicação entre sistemas</span>
+                <span class="skill-item__desc" data-i18n="skill.webhooks.desc">Eventos e comunicação entre sistemas</span>
               </div>
             </div>
           </div>
 
           <!-- IA -->
           <div class="skill-group reveal-element">
-            <h3 class="skill-group__title">Ferramentas de IA</h3>
+            <h3 class="skill-group__title" data-i18n="skills.ai">Ferramentas de IA</h3>
             <div class="skill-cards">
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/anthropic/D97757" alt="Claude" />
                 </div>
                 <span class="skill-item__name">Claude</span>
-                <span class="skill-item__desc">IA da Anthropic, coding e análise</span>
+                <span class="skill-item__desc" data-i18n="skill.claude.desc">IA da Anthropic, coding e análise</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/googlegemini/4285F4" alt="Gemini" />
                 </div>
                 <span class="skill-item__name">Gemini</span>
-                <span class="skill-item__desc">IA do Google, pesquisa e geração</span>
+                <span class="skill-item__desc" data-i18n="skill.gemini.desc">IA do Google, pesquisa e geração</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/cursor/FFFFFF" alt="Cursor" />
                 </div>
                 <span class="skill-item__name">Cursor</span>
-                <span class="skill-item__desc">Editor com IA integrada para código</span>
+                <span class="skill-item__desc" data-i18n="skill.cursor.desc">Editor com IA integrada para código</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg--lovable">
@@ -258,7 +270,7 @@
                     onerror="this.parentElement.innerHTML='<svg viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'100\' height=\'100\' rx=\'20\' fill=\'#FF3D57\'/><text x=\'50\' y=\'62\' font-size=\'38\' text-anchor=\'middle\' fill=\'white\' font-family=\'Arial\' font-weight=\'bold\'>L</text></svg>'" />
                 </div>
                 <span class="skill-item__name">Lovable</span>
-                <span class="skill-item__desc">Geração de apps full-stack com IA</span>
+                <span class="skill-item__desc" data-i18n="skill.lovable.desc">Geração de apps full-stack com IA</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
@@ -267,21 +279,21 @@
                     onerror="this.src='https://www.gstatic.com/lamda/images/notebooklm_favicon_v1_66fa86b85e23.png'" />
                 </div>
                 <span class="skill-item__name">NotebookLM</span>
-                <span class="skill-item__desc">Pesquisa e síntese de documentos</span>
+                <span class="skill-item__desc" data-i18n="skill.notebooklm.desc">Pesquisa e síntese de documentos</span>
               </div>
             </div>
           </div>
 
           <!-- CRIAÇÃO -->
           <div class="skill-group reveal-element">
-            <h3 class="skill-group__title">Criação & Conteúdo</h3>
+            <h3 class="skill-group__title" data-i18n="skills.creation">Criação & Conteúdo</h3>
             <div class="skill-cards">
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" alt="Canva" />
                 </div>
                 <span class="skill-item__name">Canva</span>
-                <span class="skill-item__desc">Design e conteúdo para redes sociais</span>
+                <span class="skill-item__desc" data-i18n="skill.canva.desc">Design e conteúdo para redes sociais</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--purple">
@@ -291,8 +303,8 @@
                     <polyline points="21 15 16 10 5 21"/>
                   </svg>
                 </div>
-                <span class="skill-item__name">Edição de Imagens</span>
-                <span class="skill-item__desc">Tratamento e ajuste de fotos</span>
+                <span class="skill-item__name" data-i18n="skill.imgedit.name">Edição de Imagens</span>
+                <span class="skill-item__desc" data-i18n="skill.imgedit.desc">Tratamento e ajuste de fotos</span>
               </div>
               <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--red">
@@ -301,8 +313,8 @@
                     <rect x="1" y="5" width="15" height="14" rx="2"/>
                   </svg>
                 </div>
-                <span class="skill-item__name">Edição de Vídeos</span>
-                <span class="skill-item__desc">Corte, montagem e pós-produção</span>
+                <span class="skill-item__name" data-i18n="skill.videoedit.name">Edição de Vídeos</span>
+                <span class="skill-item__desc" data-i18n="skill.videoedit.desc">Corte, montagem e pós-produção</span>
               </div>
             </div>
           </div>
@@ -314,8 +326,8 @@
     <!-- EXPERIÊNCIA -->
     <section class="section section--alt" id="experiencia">
       <div class="container">
-        <h2 class="section__title reveal-element">Experiência & Formação</h2>
-        <p class="section__sub reveal-element">Onde trabalho e estudo.</p>
+        <h2 class="section__title reveal-element" data-i18n="xp.title">Experiência & Formação</h2>
+        <p class="section__sub reveal-element" data-i18n="xp.sub">Onde trabalho e estudo.</p>
 
         <div class="xp-grid">
           <div class="xp-card reveal-element">
@@ -323,10 +335,10 @@
               <img src="https://www.google.com/s2/favicons?sz=64&domain=windel.com.br" alt="Windel Sistemas" />
             </div>
             <div class="xp-card__info">
-              <span class="xp-card__type">Trabalho</span>
+              <span class="xp-card__type" data-i18n="xp.work">Trabalho</span>
               <h3 class="xp-card__name">Windel Sistemas</h3>
-              <p class="xp-card__role">Desenvolvedor Delphi</p>
-              <p class="xp-card__desc">Otimização de sistemas e aplicação de correções estruturais em software de gestão ERP para micro e pequenas empresas. Caxias do Sul, RS.</p>
+              <p class="xp-card__role" data-i18n="xp.windel.role">Desenvolvedor Delphi</p>
+              <p class="xp-card__desc" data-i18n="xp.windel.desc">Otimização de sistemas e aplicação de correções estruturais em software de gestão ERP para micro e pequenas empresas. Caxias do Sul, RS.</p>
             </div>
           </div>
           <div class="xp-card reveal-element">
@@ -334,10 +346,10 @@
               <img src="UCS.png" alt="UCS" />
             </div>
             <div class="xp-card__info">
-              <span class="xp-card__type">Graduação</span>
+              <span class="xp-card__type" data-i18n="xp.grad">Graduação</span>
               <h3 class="xp-card__name">Universidade de Caxias do Sul</h3>
-              <p class="xp-card__role">Engenharia de Software</p>
-              <p class="xp-card__desc">Ingressando no 2º semestre. Formação técnica e teórica em desenvolvimento, arquitetura de software e engenharia de sistemas.</p>
+              <p class="xp-card__role" data-i18n="xp.ucs.role">Engenharia de Software</p>
+              <p class="xp-card__desc" data-i18n="xp.ucs.desc">Ingressando no 2º semestre. Formação técnica e teórica em desenvolvimento, arquitetura de software e engenharia de sistemas.</p>
             </div>
           </div>
         </div>
@@ -347,8 +359,8 @@
     <!-- PORTFÓLIO -->
     <section class="section" id="portfolio">
       <div class="container">
-        <h2 class="section__title reveal-element">Portfólio</h2>
-        <p class="section__sub reveal-element">Projetos que desenvolvi — do conceito à entrega.</p>
+        <h2 class="section__title reveal-element" data-i18n="portfolio.title">Portfólio</h2>
+        <p class="section__sub reveal-element" data-i18n="portfolio.sub">Projetos que desenvolvi — do conceito à entrega.</p>
 
         <div class="portfolio__grid">
           <a href="projects/habilita-imp.html" class="portfolio-card reveal-element">
@@ -357,7 +369,7 @@
             </div>
             <div class="portfolio-card__body">
               <h3 class="portfolio-card__title">Habilita I.M.P.</h3>
-              <p class="portfolio-card__desc">Plataforma full-stack de monitoramento industrial para autoclaves — ingestão MQTT, persistência no Supabase, API REST, dashboards em tempo real via WebSocket e rastreabilidade de pneus por ciclo.</p>
+              <p class="portfolio-card__desc" data-i18n="portfolio.habilita.desc">Plataforma full-stack de monitoramento industrial para autoclaves — ingestão MQTT, persistência no Supabase, API REST, dashboards em tempo real via WebSocket e rastreabilidade de pneus por ciclo.</p>
               <div class="portfolio-card__tags">
                 <span class="portfolio-card__tag">React</span>
                 <span class="portfolio-card__tag">Node.js</span>
@@ -365,7 +377,7 @@
                 <span class="portfolio-card__tag">Supabase</span>
                 <span class="portfolio-card__tag">Socket.IO</span>
               </div>
-              <span class="portfolio-card__cta">Ver projeto →</span>
+              <span class="portfolio-card__cta" data-i18n="portfolio.cta">Ver projeto →</span>
             </div>
           </a>
         </div>
@@ -375,14 +387,14 @@
     <!-- JORNADA -->
     <section class="section section--alt" id="jornada">
       <div class="container">
-        <h2 class="section__title reveal-element">Jornada Acadêmica</h2>
-        <p class="section__sub reveal-element">Engenharia de Software — UCS · cursando desde 2023/2</p>
+        <h2 class="section__title reveal-element" data-i18n="journey.title">Jornada Acadêmica</h2>
+        <p class="section__sub reveal-element" data-i18n="journey.sub">Engenharia de Software — UCS · cursando desde 2023/2</p>
 
         <div class="tabs reveal-element">
           <div class="tabs__nav" role="tablist">
-            <button class="tabs__btn tabs__btn--active" data-tab="concluidas" role="tab">Concluídas</button>
-            <button class="tabs__btn" data-tab="cursando" role="tab">Cursando</button>
-            <button class="tabs__btn" data-tab="proximos" role="tab">Próximas</button>
+            <button class="tabs__btn tabs__btn--active" data-tab="concluidas" role="tab" data-i18n="journey.tab.done">Concluídas</button>
+            <button class="tabs__btn" data-tab="cursando" role="tab" data-i18n="journey.tab.current">Cursando</button>
+            <button class="tabs__btn" data-tab="proximos" role="tab" data-i18n="journey.tab.next">Próximas</button>
             <div class="tabs__indicator" id="tabsIndicator"></div>
           </div>
           <div class="tabs__panel tabs__panel--active" id="tab-concluidas" role="tabpanel">
@@ -489,8 +501,8 @@
     <!-- BIBLIOTECA -->
     <section class="section" id="biblioteca">
       <div class="container">
-        <h2 class="section__title reveal-element">Biblioteca</h2>
-        <p class="section__sub reveal-element">Leituras que moldaram minha forma de pensar.</p>
+        <h2 class="section__title reveal-element" data-i18n="library.title">Biblioteca</h2>
+        <p class="section__sub reveal-element" data-i18n="library.sub">Leituras que moldaram minha forma de pensar.</p>
         <div class="books__grid">
           <div class="book-card reveal-element">
             <div class="book-card__cover">
@@ -499,7 +511,7 @@
             <div class="book-card__info">
               <span class="book-card__author">Andrew Hunt & David Thomas</span>
               <h3 class="book-card__title">O Programador Pragmático</h3>
-              <p class="book-card__comment">Um guia direto sobre como pensar e trabalhar como desenvolvedor. Mudou minha forma de encarar código e qualidade de software.</p>
+              <p class="book-card__comment" data-i18n="library.book1.comment">Um guia direto sobre como pensar e trabalhar como desenvolvedor. Mudou minha forma de encarar código e qualidade de software.</p>
             </div>
           </div>
           <div class="book-card reveal-element">
@@ -509,7 +521,7 @@
             <div class="book-card__info">
               <span class="book-card__author">Aditya Y. Bhargava</span>
               <h3 class="book-card__title">Entendendo Algoritmos</h3>
-              <p class="book-card__comment">Didático e visual. A melhor introdução a algoritmos que já li. Essencial para qualquer programador.</p>
+              <p class="book-card__comment" data-i18n="library.book2.comment">Didático e visual. A melhor introdução a algoritmos que já li. Essencial para qualquer programador.</p>
             </div>
           </div>
         </div>
@@ -520,7 +532,7 @@
 
   <footer class="footer" id="contato">
     <div class="container">
-      <p class="footer__title reveal-element">Vamos conversar.</p>
+      <p class="footer__title reveal-element" data-i18n="footer.title">Vamos conversar.</p>
       <div class="footer__links reveal-element">
         <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="footer__link">WhatsApp ↗</a>
         <a href="tel:+5554999252321" class="footer__link">+55 (54) 99925-2321</a>
@@ -528,10 +540,11 @@
         <a href="https://github.com/brunomiotto08" target="_blank" rel="noopener" class="footer__link">GitHub ↗</a>
         <a href="/cdn-cgi/l/email-protection#f694848398999b9f99828299b6939b979f9ad895999b" class="footer__link">E-mail ↗</a>
       </div>
-      <p class="footer__copy">© 2026 Bruno Miotto — Caxias do Sul, RS</p>
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 Bruno Miotto — Caxias do Sul, RS</p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 
 </body>

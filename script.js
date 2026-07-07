@@ -110,6 +110,10 @@
     caption.textContent = item.dataset.caption || thumb.alt || '';
   }
 
+  document.addEventListener('langchange', () => {
+    if (!lightbox.hidden) show(current);
+  });
+
   function open(index) {
     show(index);
     lightbox.hidden = false;

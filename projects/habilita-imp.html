@@ -10,40 +10,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body class="project-page">
+<body class="project-page" data-i18n-title="meta.project.habilita.title" data-i18n-desc="meta.project.habilita.desc">
 
   <nav class="nav nav--scrolled" id="nav">
     <ul class="nav__links">
-      <li><a href="../index.html#inicio" class="nav__link">início</a></li>
-      <li><a href="../index.html#portfolio" class="nav__link">portfólio</a></li>
-      <li><a href="../index.html#contato" class="nav__link">contato</a></li>
+      <li><a href="../index.html#inicio" class="nav__link" data-i18n="nav.home">início</a></li>
+      <li><a href="../index.html#portfolio" class="nav__link" data-i18n="nav.portfolio">portfólio</a></li>
+      <li><a href="../index.html#contato" class="nav__link" data-i18n="nav.contact">contato</a></li>
     </ul>
-    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span>
-    </button>
+    <div class="nav__actions">
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:aria.lang">
+        <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+        <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+        <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" data-i18n-attr="aria-label:aria.menu">
+        <span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="../index.html#inicio" class="mobile-menu__link">início</a></li>
-      <li><a href="../index.html#portfolio" class="mobile-menu__link">portfólio</a></li>
-      <li><a href="../index.html#contato" class="mobile-menu__link">contato</a></li>
+      <li><a href="../index.html#inicio" class="mobile-menu__link" data-i18n="nav.home">início</a></li>
+      <li><a href="../index.html#portfolio" class="mobile-menu__link" data-i18n="nav.portfolio">portfólio</a></li>
+      <li><a href="../index.html#contato" class="mobile-menu__link" data-i18n="nav.contact">contato</a></li>
     </ul>
+    <div class="lang-switch lang-switch--mobile" role="group" data-i18n-attr="aria-label:aria.lang">
+      <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+      <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+      <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
+    </div>
   </div>
 
   <main class="project">
 
     <header class="project-hero">
       <div class="container project-hero__inner">
-        <a href="../index.html#portfolio" class="project-back reveal-element">← Voltar ao portfólio</a>
+        <a href="../index.html#portfolio" class="project-back reveal-element" data-i18n="project.back">← Voltar ao portfólio</a>
 
         <div class="project-hero__meta reveal-element">
-          <span class="project-hero__type">Full-stack · IoT Industrial</span>
+          <span class="project-hero__type" data-i18n="project.habilita.type">Full-stack · IoT Industrial</span>
           <span class="project-hero__year">2026 · v2.3</span>
         </div>
 
         <h1 class="project-hero__title reveal-element">Habilita I.M.P.</h1>
-        <p class="project-hero__subtitle reveal-element">
+        <p class="project-hero__subtitle reveal-element" data-i18n-html="project.habilita.subtitle">
           <strong>Industrial Monitoring Platform</strong> — solução completa para monitoramento de autoclaves e equipamentos de produção, com ingestão de dados via MQTT, persistência em PostgreSQL (Supabase), API REST autenticada, dashboards ao vivo via WebSocket e rastreabilidade de pneus por ciclo de produção.
         </p>
 
@@ -64,30 +76,30 @@
 
     <section class="project-section">
       <div class="container project-section__grid">
-        <div class="project-section__label reveal-element">Sobre</div>
+        <div class="project-section__label reveal-element" data-i18n="project.about">Sobre</div>
         <div class="project-section__content">
-          <p class="project-text reveal-element">
+          <p class="project-text reveal-element" data-i18n-html="project.about.p1">
             O <strong>Habilita I.M.P.</strong> resolve um problema real do chão de fábrica: dados espalhados em PLCs sem visibilidade central, histórico confiável ou alertas em tempo real. A plataforma recebe telemetria de sensores e CLPs via broker MQTT, processa no backend Node.js, persiste no Supabase e entrega uma interface React moderna para operadores, supervisores e administradores.
           </p>
-          <p class="project-text reveal-element">
+          <p class="project-text reveal-element" data-i18n-html="project.about.p2">
             O sistema é <strong>multi-tenant</strong> — cada fábrica/cliente opera de forma isolada com Row Level Security (RLS) — e evoluiu em quatro versões, da leitura básica de temperatura e vibração até a rastreabilidade completa de pneus vinculados a cada ciclo de autoclave.
           </p>
           <div class="project-versions reveal-element">
             <div class="project-versions__item">
               <span class="project-versions__ver">V2.0</span>
-              <span class="project-versions__desc">Empresas, usuários e leituras básicas (temperatura, vibração, status)</span>
+              <span class="project-versions__desc" data-i18n="project.v20">Empresas, usuários e leituras básicas (temperatura, vibração, status)</span>
             </div>
             <div class="project-versions__item">
               <span class="project-versions__ver">V2.1</span>
-              <span class="project-versions__desc">Máquinas individuais, ciclos de produção, log de alarmes e API expandida</span>
+              <span class="project-versions__desc" data-i18n="project.v21">Máquinas individuais, ciclos de produção, log de alarmes e API expandida</span>
             </div>
             <div class="project-versions__item">
               <span class="project-versions__ver">V2.2</span>
-              <span class="project-versions__desc">Pressões (envelope/saco de ar), motor, 6 válvulas e views SQL otimizadas</span>
+              <span class="project-versions__desc" data-i18n="project.v22">Pressões (envelope/saco de ar), motor, 6 válvulas e views SQL otimizadas</span>
             </div>
             <div class="project-versions__item">
               <span class="project-versions__ver">V2.3</span>
-              <span class="project-versions__desc">Rastreabilidade de pneus por ciclo com <code>numero_ciclo</code> sequencial por máquina</span>
+              <span class="project-versions__desc" data-i18n-html="project.v23">Rastreabilidade de pneus por ciclo com <code>numero_ciclo</code> sequencial por máquina</span>
             </div>
           </div>
         </div>
@@ -96,37 +108,37 @@
 
     <section class="project-section">
       <div class="container">
-        <h2 class="project-heading reveal-element">Funcionalidades</h2>
+        <h2 class="project-heading reveal-element" data-i18n="project.features">Funcionalidades</h2>
         <div class="project-features">
           <article class="project-feature reveal-element">
             <span class="project-feature__num">01</span>
-            <h3 class="project-feature__title">Dashboard multi-máquina</h3>
-            <p class="project-feature__desc">Visão geral com cards arrastáveis (drag-and-drop), ciclos ativos, métricas ao vivo e navegação para o painel detalhado de cada autoclave.</p>
+            <h3 class="project-feature__title" data-i18n="project.f01.title">Dashboard multi-máquina</h3>
+            <p class="project-feature__desc" data-i18n="project.f01.desc">Visão geral com cards arrastáveis (drag-and-drop), ciclos ativos, métricas ao vivo e navegação para o painel detalhado de cada autoclave.</p>
           </article>
           <article class="project-feature reveal-element">
             <span class="project-feature__num">02</span>
-            <h3 class="project-feature__title">Ingestão MQTT</h3>
-            <p class="project-feature__desc">Backend assina tópicos wildcard, valida máquina e empresa, processa 4 tipos de mensagem: telemetria, início/fim de ciclo e alarmes manuais.</p>
+            <h3 class="project-feature__title" data-i18n="project.f02.title">Ingestão MQTT</h3>
+            <p class="project-feature__desc" data-i18n="project.f02.desc">Backend assina tópicos wildcard, valida máquina e empresa, processa 4 tipos de mensagem: telemetria, início/fim de ciclo e alarmes manuais.</p>
           </article>
           <article class="project-feature reveal-element">
             <span class="project-feature__num">03</span>
-            <h3 class="project-feature__title">Monitoramento de ciclos</h3>
-            <p class="project-feature__desc">Ciclos sequenciais por máquina, KPIs em tempo real, gráficos ApexCharts, vínculo de códigos de pneu e histórico filtrável.</p>
+            <h3 class="project-feature__title" data-i18n="project.f03.title">Monitoramento de ciclos</h3>
+            <p class="project-feature__desc" data-i18n="project.f03.desc">Ciclos sequenciais por máquina, KPIs em tempo real, gráficos ApexCharts, vínculo de códigos de pneu e histórico filtrável.</p>
           </article>
           <article class="project-feature reveal-element">
             <span class="project-feature__num">04</span>
-            <h3 class="project-feature__title">Alarmes inteligentes</h3>
-            <p class="project-feature__desc">Detecção automática de limites de temperatura e vibração com cooldown anti-spam (30s), prioridades e reconhecimento individual ou em lote.</p>
+            <h3 class="project-feature__title" data-i18n="project.f04.title">Alarmes inteligentes</h3>
+            <p class="project-feature__desc" data-i18n="project.f04.desc">Detecção automática de limites de temperatura e vibração com cooldown anti-spam (30s), prioridades e reconhecimento individual ou em lote.</p>
           </article>
           <article class="project-feature reveal-element">
             <span class="project-feature__num">05</span>
-            <h3 class="project-feature__title">Registros e status</h3>
-            <p class="project-feature__desc">Tabela histórica com 14+ colunas, filtros por período, status de motor e 6 válvulas, e cards com cores dinâmicas por limiar.</p>
+            <h3 class="project-feature__title" data-i18n="project.f05.title">Registros e status</h3>
+            <p class="project-feature__desc" data-i18n="project.f05.desc">Tabela histórica com 14+ colunas, filtros por período, status de motor e 6 válvulas, e cards com cores dinâmicas por limiar.</p>
           </article>
           <article class="project-feature reveal-element">
             <span class="project-feature__num">06</span>
-            <h3 class="project-feature__title">Multi-tenancy & auth</h3>
-            <p class="project-feature__desc">Autenticação JWT via Supabase Auth, isolamento por empresa com RLS, roles (admin/user/viewer) e rooms WebSocket por tenant.</p>
+            <h3 class="project-feature__title" data-i18n="project.f06.title">Multi-tenancy & auth</h3>
+            <p class="project-feature__desc" data-i18n="project.f06.desc">Autenticação JWT via Supabase Auth, isolamento por empresa com RLS, roles (admin/user/viewer) e rooms WebSocket por tenant.</p>
           </article>
         </div>
       </div>
@@ -134,9 +146,9 @@
 
     <section class="project-section project-section--alt">
       <div class="container project-section__grid">
-        <div class="project-section__label reveal-element">Arquitetura</div>
+        <div class="project-section__label reveal-element" data-i18n="project.arch">Arquitetura</div>
         <div class="project-section__content">
-          <p class="project-text reveal-element">
+          <p class="project-text reveal-element" data-i18n-html="project.arch.p">
             O fluxo de leitura MQTT segue 9 etapas: o PLC publica JSON no tópico
             <code class="project-code" style="display:inline;padding:0.15rem 0.4rem;margin:0;font-size:0.8rem;">empresas/{empresa_id}/maquinas/{uuid}/{tipo}</code>,
             o backend valida, persiste em <code>leituras_maquina</code>, verifica limites, gera alarmes se necessário e emite eventos via Socket.IO para a sala <code>empresa_{id}</code>.
@@ -147,32 +159,32 @@
               <li class="project-flow__step">
                 <span class="project-flow__node"></span>
                 <span class="project-flow__icon">⚙️</span>
-                <span class="project-flow__label">PLC / Sensores</span>
+                <span class="project-flow__label" data-i18n="project.flow.plc">PLC / Sensores</span>
               </li>
               <li class="project-flow__step">
                 <span class="project-flow__node"></span>
                 <span class="project-flow__icon">📡</span>
-                <span class="project-flow__label">Broker MQTT</span>
+                <span class="project-flow__label" data-i18n="project.flow.mqtt">Broker MQTT</span>
               </li>
               <li class="project-flow__step">
                 <span class="project-flow__node"></span>
                 <span class="project-flow__icon">🟢</span>
-                <span class="project-flow__label">Node.js + Express</span>
+                <span class="project-flow__label" data-i18n="project.flow.node">Node.js + Express</span>
               </li>
               <li class="project-flow__step">
                 <span class="project-flow__node"></span>
                 <span class="project-flow__icon">🗄️</span>
-                <span class="project-flow__label">Supabase (PG)</span>
+                <span class="project-flow__label" data-i18n="project.flow.db">Supabase (PG)</span>
               </li>
               <li class="project-flow__step">
                 <span class="project-flow__node"></span>
                 <span class="project-flow__icon">⚡</span>
-                <span class="project-flow__label">Socket.IO</span>
+                <span class="project-flow__label" data-i18n="project.flow.socket">Socket.IO</span>
               </li>
               <li class="project-flow__step">
                 <span class="project-flow__node"></span>
                 <span class="project-flow__icon">🖥️</span>
-                <span class="project-flow__label">React Dashboard</span>
+                <span class="project-flow__label" data-i18n="project.flow.react">React Dashboard</span>
               </li>
             </ol>
           </div>
@@ -182,78 +194,78 @@
 
     <section class="project-section">
       <div class="container">
-        <h2 class="project-heading reveal-element">Galeria</h2>
-        <p class="project-gallery__sub reveal-element">Telas do sistema em operação — clique para ampliar.</p>
+        <h2 class="project-heading reveal-element" data-i18n="project.gallery">Galeria</h2>
+        <p class="project-gallery__sub reveal-element" data-i18n="project.gallery.sub">Telas do sistema em operação — clique para ampliar.</p>
         <div class="project-gallery">
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Visão geral — máquinas em tempo real">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Visão geral das máquinas">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c1">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c1">
               <img src="../assets/portfolio/habilita-imp/dashboard.png" alt="Visão geral das máquinas" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Visão geral — máquinas em tempo real</figcaption>
+            <figcaption data-i18n="project.gallery.c1">Visão geral — máquinas em tempo real</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Gerenciamento de máquinas e tópicos MQTT">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Gerenciamento de máquinas">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c2">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c2">
               <img src="../assets/portfolio/habilita-imp/gerenciamento-maquinas.png" alt="Gerenciamento de máquinas" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Gerenciamento de máquinas e tópicos MQTT</figcaption>
+            <figcaption data-i18n="project.gallery.c2">Gerenciamento de máquinas e tópicos MQTT</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Monitoramento de ciclo com telemetria">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Monitoramento de ciclo">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c3">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c3">
               <img src="../assets/portfolio/habilita-imp/monitoramento-ciclo.png" alt="Monitoramento de ciclo" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Monitoramento de ciclo com telemetria</figcaption>
+            <figcaption data-i18n="project.gallery.c3">Monitoramento de ciclo com telemetria</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Gráfico de telemetria do ciclo">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Gráfico de telemetria">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c4">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c4">
               <img src="../assets/portfolio/habilita-imp/telemetria.png" alt="Gráfico de telemetria" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Gráfico de telemetria do ciclo</figcaption>
+            <figcaption data-i18n="project.gallery.c4">Gráfico de telemetria do ciclo</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Registro de pneus e resumo do ciclo">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Resumo do ciclo e pneus">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c5">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c5">
               <img src="../assets/portfolio/habilita-imp/ciclo-pneus.png" alt="Resumo do ciclo e pneus" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Registro de pneus e resumo do ciclo</figcaption>
+            <figcaption data-i18n="project.gallery.c5">Registro de pneus e resumo do ciclo</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Histórico de ciclos com filtros">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Histórico de ciclos">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c6">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c6">
               <img src="../assets/portfolio/habilita-imp/historico-ciclos.png" alt="Histórico de ciclos" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Histórico de ciclos com filtros</figcaption>
+            <figcaption data-i18n="project.gallery.c6">Histórico de ciclos com filtros</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Registros de leituras com status colorido">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Registros de leituras">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c7">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c7">
               <img src="../assets/portfolio/habilita-imp/registros-leituras.png" alt="Registros de leituras" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Registros de leituras com status colorido</figcaption>
+            <figcaption data-i18n="project.gallery.c7">Registros de leituras com status colorido</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Painel de notificações e alertas">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Painel de notificações">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c8">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c8">
               <img src="../assets/portfolio/habilita-imp/notificacoes.png" alt="Painel de notificações" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Painel de notificações e alertas</figcaption>
+            <figcaption data-i18n="project.gallery.c8">Painel de notificações e alertas</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Medidor e histórico de temperatura">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Monitoramento de temperatura">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c9">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c9">
               <img src="../assets/portfolio/habilita-imp/temperatura.png" alt="Monitoramento de temperatura" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Medidor e histórico de temperatura</figcaption>
+            <figcaption data-i18n="project.gallery.c9">Medidor e histórico de temperatura</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Vibração, produção e pressões">
-            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Métricas de vibração e produção">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.gallery.c10">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.gallery.c10">
               <img src="../assets/portfolio/habilita-imp/metricas.png" alt="Métricas de vibração e produção" loading="lazy" />
               <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
             </button>
-            <figcaption>Vibração, produção e pressões</figcaption>
+            <figcaption data-i18n="project.gallery.c10">Vibração, produção e pressões</figcaption>
           </figure>
         </div>
       </div>
@@ -261,40 +273,40 @@
 
     <section class="project-section project-section--alt">
       <div class="container project-section__grid">
-        <div class="project-section__label reveal-element">Stack</div>
+        <div class="project-section__label reveal-element" data-i18n="project.stack">Stack</div>
         <div class="project-section__content">
           <div class="project-stack reveal-element">
             <div class="project-stack__item">
               <span class="project-stack__name">React 19 + Vite</span>
-              <span class="project-stack__role">Frontend SPA com rotas e build otimizado</span>
+              <span class="project-stack__role" data-i18n="project.stack.react">Frontend SPA com rotas e build otimizado</span>
             </div>
             <div class="project-stack__item">
               <span class="project-stack__name">Material UI 7</span>
-              <span class="project-stack__role">Componentes e tema dark premium</span>
+              <span class="project-stack__role" data-i18n="project.stack.mui">Componentes e tema dark premium</span>
             </div>
             <div class="project-stack__item">
               <span class="project-stack__name">ApexCharts</span>
-              <span class="project-stack__role">Gráficos, gauges e telemetria visual</span>
+              <span class="project-stack__role" data-i18n="project.stack.apex">Gráficos, gauges e telemetria visual</span>
             </div>
             <div class="project-stack__item">
               <span class="project-stack__name">Node.js + Express 5</span>
-              <span class="project-stack__role">API REST e servidor HTTP</span>
+              <span class="project-stack__role" data-i18n="project.stack.express">API REST e servidor HTTP</span>
             </div>
             <div class="project-stack__item">
               <span class="project-stack__name">Socket.IO</span>
-              <span class="project-stack__role">WebSocket bidirecional por empresa</span>
+              <span class="project-stack__role" data-i18n="project.stack.socket">WebSocket bidirecional por empresa</span>
             </div>
             <div class="project-stack__item">
               <span class="project-stack__name">MQTT v5</span>
-              <span class="project-stack__role">Ingestão de dados industriais</span>
+              <span class="project-stack__role" data-i18n="project.stack.mqtt">Ingestão de dados industriais</span>
             </div>
             <div class="project-stack__item">
               <span class="project-stack__name">Supabase + PostgreSQL</span>
-              <span class="project-stack__role">Auth, RLS, persistência e views SQL</span>
+              <span class="project-stack__role" data-i18n="project.stack.supabase">Auth, RLS, persistência e views SQL</span>
             </div>
             <div class="project-stack__item">
               <span class="project-stack__name">Framer Motion + @dnd-kit</span>
-              <span class="project-stack__role">Animações e drag-and-drop no overview</span>
+              <span class="project-stack__role" data-i18n="project.stack.motion">Animações e drag-and-drop no overview</span>
             </div>
           </div>
         </div>
@@ -303,8 +315,8 @@
 
     <section class="project-cta">
       <div class="container project-cta__inner reveal-element">
-        <p class="project-cta__text">Quer ver mais projetos?</p>
-        <a href="../index.html#portfolio" class="btn btn--primary">Voltar ao portfólio</a>
+        <p class="project-cta__text" data-i18n="project.cta.text">Quer ver mais projetos?</p>
+        <a href="../index.html#portfolio" class="btn btn--primary" data-i18n="project.cta.btn">Voltar ao portfólio</a>
       </div>
     </section>
 
@@ -312,9 +324,9 @@
 
   <div class="lightbox" id="lightbox" hidden>
     <div class="lightbox__backdrop" data-lightbox-close></div>
-    <button type="button" class="lightbox__close" data-lightbox-close aria-label="Fechar">×</button>
-    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Imagem anterior">‹</button>
-    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Próxima imagem">›</button>
+    <button type="button" class="lightbox__close" data-lightbox-close data-i18n-attr="aria-label:aria.lightbox.close">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" data-i18n-attr="aria-label:aria.lightbox.prev">‹</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" data-i18n-attr="aria-label:aria.lightbox.next">›</button>
     <figure class="lightbox__figure">
       <img class="lightbox__img" id="lightboxImg" src="" alt="" />
       <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
@@ -323,10 +335,11 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer__copy">© 2026 Bruno Miotto — Caxias do Sul, RS</p>
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 Bruno Miotto — Caxias do Sul, RS</p>
     </div>
   </footer>
 
+  <script src="../i18n.js"></script>
   <script src="../script.js"></script>
 </body>
 </html>
