@@ -17,6 +17,7 @@
       <li><a href="#inicio" class="nav__link">início</a></li>
       <li><a href="#habilidades" class="nav__link">habilidades</a></li>
       <li><a href="#experiencia" class="nav__link">experiência</a></li>
+      <li><a href="#portfolio" class="nav__link">portfólio</a></li>
       <li><a href="#jornada" class="nav__link">jornada</a></li>
       <li><a href="#biblioteca" class="nav__link">biblioteca</a></li>
       <li><a href="#contato" class="nav__link">contato</a></li>
@@ -31,6 +32,7 @@
       <li><a href="#inicio" class="mobile-menu__link">início</a></li>
       <li><a href="#habilidades" class="mobile-menu__link">habilidades</a></li>
       <li><a href="#experiencia" class="mobile-menu__link">experiência</a></li>
+      <li><a href="#portfolio" class="mobile-menu__link">portfólio</a></li>
       <li><a href="#jornada" class="mobile-menu__link">jornada</a></li>
       <li><a href="#biblioteca" class="mobile-menu__link">biblioteca</a></li>
       <li><a href="#contato" class="mobile-menu__link">contato</a></li>
@@ -68,10 +70,18 @@
                 <span class="hero__meta-value">UCS — Eng. de Software</span>
               </div>
             </div>
+            <div class="hero__meta-divider"></div>
+            <div class="hero__meta-item">
+              <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" class="hero__meta-favicon" />
+              <div>
+                <span class="hero__meta-label">Contato</span>
+                <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="hero__meta-value hero__meta-value--link">+55 (54) 99925-2321</a>
+              </div>
+            </div>
           </div>
           <div class="hero__cta reveal-element">
             <a href="#habilidades" class="btn btn--primary">Ver habilidades</a>
-            <a href="https://wa.me/54999252321" blanc class="btn btn--ghost">Contato</a>
+            <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="btn btn--ghost">Fale comigo</a>
           </div>
         </div>
         <div class="hero__photo reveal-element">
@@ -334,8 +344,36 @@
       </div>
     </section>
 
+    <!-- PORTFÓLIO -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <h2 class="section__title reveal-element">Portfólio</h2>
+        <p class="section__sub reveal-element">Projetos que desenvolvi — do conceito à entrega.</p>
+
+        <div class="portfolio__grid">
+          <a href="projects/habilita-imp.html" class="portfolio-card reveal-element">
+            <div class="portfolio-card__cover">
+              <img src="assets/portfolio/habilita-imp/dashboard.png" alt="Dashboard do Habilita IMP" loading="lazy" />
+              <span class="portfolio-card__badge">IoT Industrial</span>
+            </div>
+            <div class="portfolio-card__body">
+              <h3 class="portfolio-card__title">Habilita IMP</h3>
+              <p class="portfolio-card__desc">Plataforma de monitoramento em tempo real para autoclaves industriais — telemetria, alertas, histórico de ciclos e gestão de máquinas via MQTT.</p>
+              <div class="portfolio-card__tags">
+                <span class="portfolio-card__tag">React</span>
+                <span class="portfolio-card__tag">TypeScript</span>
+                <span class="portfolio-card__tag">Supabase</span>
+                <span class="portfolio-card__tag">MQTT</span>
+              </div>
+              <span class="portfolio-card__cta">Ver projeto →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- JORNADA -->
-    <section class="section" id="jornada">
+    <section class="section section--alt" id="jornada">
       <div class="container">
         <h2 class="section__title reveal-element">Jornada Acadêmica</h2>
         <p class="section__sub reveal-element">Engenharia de Software — UCS · cursando desde 2023/2</p>
@@ -449,7 +487,7 @@
     </section>
 
     <!-- BIBLIOTECA -->
-    <section class="section section--alt" id="biblioteca">
+    <section class="section" id="biblioteca">
       <div class="container">
         <h2 class="section__title reveal-element">Biblioteca</h2>
         <p class="section__sub reveal-element">Leituras que moldaram minha forma de pensar.</p>
@@ -484,6 +522,8 @@
     <div class="container">
       <p class="footer__title reveal-element">Vamos conversar.</p>
       <div class="footer__links reveal-element">
+        <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="footer__link">WhatsApp ↗</a>
+        <a href="tel:+5554999252321" class="footer__link">+55 (54) 99925-2321</a>
         <a href="https://linkedin.com/in/brunomiotto08" target="_blank" rel="noopener" class="footer__link">LinkedIn ↗</a>
         <a href="https://github.com/brunomiotto08" target="_blank" rel="noopener" class="footer__link">GitHub ↗</a>
         <a href="/cdn-cgi/l/email-protection#f694848398999b9f99828299b6939b979f9ad895999b" class="footer__link">E-mail ↗</a>

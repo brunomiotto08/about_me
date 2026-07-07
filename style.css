@@ -233,6 +233,11 @@ ul { list-style: none; }
   font-weight: 500;
   color: var(--text);
 }
+.hero__meta-value--link {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.hero__meta-value--link:hover { color: var(--accent); }
 .hero__meta-divider {
   width: 1px;
   height: 32px;
