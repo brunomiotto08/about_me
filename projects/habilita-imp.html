@@ -56,10 +56,6 @@
           <span class="portfolio-card__tag">Socket.IO</span>
         </div>
 
-        <div class="project-links reveal-element">
-          <a href="https://github.com/brunomiotto08/IoT-MQTT" target="_blank" rel="noopener" class="btn btn--primary">Ver no GitHub ↗</a>
-        </div>
-
         <div class="project-hero__cover reveal-element">
           <img src="../assets/portfolio/habilita-imp/dashboard.png" alt="Visão geral do dashboard Habilita I.M.P." />
         </div>
@@ -146,35 +142,39 @@
             o backend valida, persiste em <code>leituras_maquina</code>, verifica limites, gera alarmes se necessário e emite eventos via Socket.IO para a sala <code>empresa_{id}</code>.
           </p>
           <div class="project-flow reveal-element">
-            <div class="project-flow__step">
-              <span class="project-flow__icon">⚙️</span>
-              <span class="project-flow__label">PLC / Sensores</span>
-            </div>
-            <span class="project-flow__arrow">→</span>
-            <div class="project-flow__step">
-              <span class="project-flow__icon">📡</span>
-              <span class="project-flow__label">Broker MQTT</span>
-            </div>
-            <span class="project-flow__arrow">→</span>
-            <div class="project-flow__step">
-              <span class="project-flow__icon">🟢</span>
-              <span class="project-flow__label">Node.js + Express</span>
-            </div>
-            <span class="project-flow__arrow">→</span>
-            <div class="project-flow__step">
-              <span class="project-flow__icon">🗄️</span>
-              <span class="project-flow__label">Supabase (PG)</span>
-            </div>
-            <span class="project-flow__arrow">→</span>
-            <div class="project-flow__step">
-              <span class="project-flow__icon">⚡</span>
-              <span class="project-flow__label">Socket.IO</span>
-            </div>
-            <span class="project-flow__arrow">→</span>
-            <div class="project-flow__step">
-              <span class="project-flow__icon">🖥️</span>
-              <span class="project-flow__label">React Dashboard</span>
-            </div>
+            <div class="project-flow__line" aria-hidden="true"></div>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">⚙️</span>
+                <span class="project-flow__label">PLC / Sensores</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">📡</span>
+                <span class="project-flow__label">Broker MQTT</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">🟢</span>
+                <span class="project-flow__label">Node.js + Express</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">🗄️</span>
+                <span class="project-flow__label">Supabase (PG)</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">⚡</span>
+                <span class="project-flow__label">Socket.IO</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">🖥️</span>
+                <span class="project-flow__label">React Dashboard</span>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -183,46 +183,76 @@
     <section class="project-section">
       <div class="container">
         <h2 class="project-heading reveal-element">Galeria</h2>
-        <p class="project-gallery__sub reveal-element">Telas do sistema em operação.</p>
+        <p class="project-gallery__sub reveal-element">Telas do sistema em operação — clique para ampliar.</p>
         <div class="project-gallery">
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/dashboard.png" alt="Visão geral das máquinas" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Visão geral — máquinas em tempo real">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Visão geral das máquinas">
+              <img src="../assets/portfolio/habilita-imp/dashboard.png" alt="Visão geral das máquinas" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Visão geral — máquinas em tempo real</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/gerenciamento-maquinas.png" alt="Gerenciamento de máquinas" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Gerenciamento de máquinas e tópicos MQTT">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Gerenciamento de máquinas">
+              <img src="../assets/portfolio/habilita-imp/gerenciamento-maquinas.png" alt="Gerenciamento de máquinas" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Gerenciamento de máquinas e tópicos MQTT</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/monitoramento-ciclo.png" alt="Monitoramento de ciclo" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Monitoramento de ciclo com telemetria">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Monitoramento de ciclo">
+              <img src="../assets/portfolio/habilita-imp/monitoramento-ciclo.png" alt="Monitoramento de ciclo" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Monitoramento de ciclo com telemetria</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/telemetria.png" alt="Gráfico de telemetria" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Gráfico de telemetria do ciclo">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Gráfico de telemetria">
+              <img src="../assets/portfolio/habilita-imp/telemetria.png" alt="Gráfico de telemetria" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Gráfico de telemetria do ciclo</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/ciclo-pneus.png" alt="Resumo do ciclo e pneus" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Registro de pneus e resumo do ciclo">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Resumo do ciclo e pneus">
+              <img src="../assets/portfolio/habilita-imp/ciclo-pneus.png" alt="Resumo do ciclo e pneus" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Registro de pneus e resumo do ciclo</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/historico-ciclos.png" alt="Histórico de ciclos" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Histórico de ciclos com filtros">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Histórico de ciclos">
+              <img src="../assets/portfolio/habilita-imp/historico-ciclos.png" alt="Histórico de ciclos" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Histórico de ciclos com filtros</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/registros-leituras.png" alt="Registros de leituras" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Registros de leituras com status colorido">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Registros de leituras">
+              <img src="../assets/portfolio/habilita-imp/registros-leituras.png" alt="Registros de leituras" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Registros de leituras com status colorido</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/notificacoes.png" alt="Painel de notificações" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Painel de notificações e alertas">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Painel de notificações">
+              <img src="../assets/portfolio/habilita-imp/notificacoes.png" alt="Painel de notificações" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Painel de notificações e alertas</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/temperatura.png" alt="Monitoramento de temperatura" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Medidor e histórico de temperatura">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Monitoramento de temperatura">
+              <img src="../assets/portfolio/habilita-imp/temperatura.png" alt="Monitoramento de temperatura" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Medidor e histórico de temperatura</figcaption>
           </figure>
-          <figure class="project-gallery__item reveal-element">
-            <img src="../assets/portfolio/habilita-imp/metricas.png" alt="Métricas de vibração e produção" loading="lazy" />
+          <figure class="project-gallery__item reveal-element" data-lightbox data-caption="Vibração, produção e pressões">
+            <button type="button" class="project-gallery__trigger" aria-label="Ampliar: Métricas de vibração e produção">
+              <img src="../assets/portfolio/habilita-imp/metricas.png" alt="Métricas de vibração e produção" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
             <figcaption>Vibração, produção e pressões</figcaption>
           </figure>
         </div>
@@ -273,15 +303,23 @@
 
     <section class="project-cta">
       <div class="container project-cta__inner reveal-element">
-        <p class="project-cta__text">Código aberto no GitHub</p>
-        <div class="project-links" style="margin-bottom:0;justify-content:center;">
-          <a href="https://github.com/brunomiotto08/IoT-MQTT" target="_blank" rel="noopener" class="btn btn--primary">github.com/brunomiotto08/IoT-MQTT ↗</a>
-          <a href="../index.html#portfolio" class="btn btn--ghost">Voltar ao portfólio</a>
-        </div>
+        <p class="project-cta__text">Quer ver mais projetos?</p>
+        <a href="../index.html#portfolio" class="btn btn--primary">Voltar ao portfólio</a>
       </div>
     </section>
 
   </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <button type="button" class="lightbox__close" data-lightbox-close aria-label="Fechar">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Imagem anterior">‹</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Próxima imagem">›</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
 
   <footer class="footer">
     <div class="container">
