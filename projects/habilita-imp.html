@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habilita I.M.P. — Bruno Miotto</title>
+  <meta name="description" content="Plataforma full-stack de monitoramento industrial (I.M.P.) para autoclaves — MQTT, Supabase, WebSocket e rastreabilidade de pneus por ciclo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-page">
+
+  <nav class="nav nav--scrolled" id="nav">
+    <ul class="nav__links">
+      <li><a href="../index.html#inicio" class="nav__link">início</a></li>
+      <li><a href="../index.html#portfolio" class="nav__link">portfólio</a></li>
+      <li><a href="../index.html#contato" class="nav__link">contato</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="../index.html#inicio" class="mobile-menu__link">início</a></li>
+      <li><a href="../index.html#portfolio" class="mobile-menu__link">portfólio</a></li>
+      <li><a href="../index.html#contato" class="mobile-menu__link">contato</a></li>
+    </ul>
+  </div>
+
+  <main class="project">
+
+    <header class="project-hero">
+      <div class="container project-hero__inner">
+        <a href="../index.html#portfolio" class="project-back reveal-element">← Voltar ao portfólio</a>
+
+        <div class="project-hero__meta reveal-element">
+          <span class="project-hero__type">Full-stack · IoT Industrial</span>
+          <span class="project-hero__year">2026 · v2.3</span>
+        </div>
+
+        <h1 class="project-hero__title reveal-element">Habilita I.M.P.</h1>
+        <p class="project-hero__subtitle reveal-element">
+          <strong>Industrial Monitoring Platform</strong> — solução completa para monitoramento de autoclaves e equipamentos de produção, com ingestão de dados via MQTT, persistência em PostgreSQL (Supabase), API REST autenticada, dashboards ao vivo via WebSocket e rastreabilidade de pneus por ciclo de produção.
+        </p>
+
+        <div class="project-hero__tags reveal-element">
+          <span class="portfolio-card__tag">React 19</span>
+          <span class="portfolio-card__tag">Node.js</span>
+          <span class="portfolio-card__tag">Express 5</span>
+          <span class="portfolio-card__tag">MQTT v5</span>
+          <span class="portfolio-card__tag">Supabase</span>
+          <span class="portfolio-card__tag">Socket.IO</span>
+        </div>
+
+        <div class="project-links reveal-element">
+          <a href="https://github.com/brunomiotto08/IoT-MQTT" target="_blank" rel="noopener" class="btn btn--primary">Ver no GitHub ↗</a>
+        </div>
+
+        <div class="project-hero__cover reveal-element">
+          <img src="../assets/portfolio/habilita-imp/dashboard.png" alt="Visão geral do dashboard Habilita I.M.P." />
+        </div>
+      </div>
+    </header>
+
+    <section class="project-section">
+      <div class="container project-section__grid">
+        <div class="project-section__label reveal-element">Sobre</div>
+        <div class="project-section__content">
+          <p class="project-text reveal-element">
+            O <strong>Habilita I.M.P.</strong> resolve um problema real do chão de fábrica: dados espalhados em PLCs sem visibilidade central, histórico confiável ou alertas em tempo real. A plataforma recebe telemetria de sensores e CLPs via broker MQTT, processa no backend Node.js, persiste no Supabase e entrega uma interface React moderna para operadores, supervisores e administradores.
+          </p>
+          <p class="project-text reveal-element">
+            O sistema é <strong>multi-tenant</strong> — cada fábrica/cliente opera de forma isolada com Row Level Security (RLS) — e evoluiu em quatro versões, da leitura básica de temperatura e vibração até a rastreabilidade completa de pneus vinculados a cada ciclo de autoclave.
+          </p>
+          <div class="project-versions reveal-element">
+            <div class="project-versions__item">
+              <span class="project-versions__ver">V2.0</span>
+              <span class="project-versions__desc">Empresas, usuários e leituras básicas (temperatura, vibração, status)</span>
+            </div>
+            <div class="project-versions__item">
+              <span class="project-versions__ver">V2.1</span>
+              <span class="project-versions__desc">Máquinas individuais, ciclos de produção, log de alarmes e API expandida</span>
+            </div>
+            <div class="project-versions__item">
+              <span class="project-versions__ver">V2.2</span>
+              <span class="project-versions__desc">Pressões (envelope/saco de ar), motor, 6 válvulas e views SQL otimizadas</span>
+            </div>
+            <div class="project-versions__item">
+              <span class="project-versions__ver">V2.3</span>
+              <span class="project-versions__desc">Rastreabilidade de pneus por ciclo com <code>numero_ciclo</code> sequencial por máquina</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-heading reveal-element">Funcionalidades</h2>
+        <div class="project-features">
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">01</span>
+            <h3 class="project-feature__title">Dashboard multi-máquina</h3>
+            <p class="project-feature__desc">Visão geral com cards arrastáveis (drag-and-drop), ciclos ativos, métricas ao vivo e navegação para o painel detalhado de cada autoclave.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">02</span>
+            <h3 class="project-feature__title">Ingestão MQTT</h3>
+            <p class="project-feature__desc">Backend assina tópicos wildcard, valida máquina e empresa, processa 4 tipos de mensagem: telemetria, início/fim de ciclo e alarmes manuais.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">03</span>
+            <h3 class="project-feature__title">Monitoramento de ciclos</h3>
+            <p class="project-feature__desc">Ciclos sequenciais por máquina, KPIs em tempo real, gráficos ApexCharts, vínculo de códigos de pneu e histórico filtrável.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">04</span>
+            <h3 class="project-feature__title">Alarmes inteligentes</h3>
+            <p class="project-feature__desc">Detecção automática de limites de temperatura e vibração com cooldown anti-spam (30s), prioridades e reconhecimento individual ou em lote.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">05</span>
+            <h3 class="project-feature__title">Registros e status</h3>
+            <p class="project-feature__desc">Tabela histórica com 14+ colunas, filtros por período, status de motor e 6 válvulas, e cards com cores dinâmicas por limiar.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">06</span>
+            <h3 class="project-feature__title">Multi-tenancy & auth</h3>
+            <p class="project-feature__desc">Autenticação JWT via Supabase Auth, isolamento por empresa com RLS, roles (admin/user/viewer) e rooms WebSocket por tenant.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-section--alt">
+      <div class="container project-section__grid">
+        <div class="project-section__label reveal-element">Arquitetura</div>
+        <div class="project-section__content">
+          <p class="project-text reveal-element">
+            O fluxo de leitura MQTT segue 9 etapas: o PLC publica JSON no tópico
+            <code class="project-code" style="display:inline;padding:0.15rem 0.4rem;margin:0;font-size:0.8rem;">empresas/{empresa_id}/maquinas/{uuid}/{tipo}</code>,
+            o backend valida, persiste em <code>leituras_maquina</code>, verifica limites, gera alarmes se necessário e emite eventos via Socket.IO para a sala <code>empresa_{id}</code>.
+          </p>
+          <div class="project-flow reveal-element">
+            <div class="project-flow__step">
+              <span class="project-flow__icon">⚙️</span>
+              <span class="project-flow__label">PLC / Sensores</span>
+            </div>
+            <span class="project-flow__arrow">→</span>
+            <div class="project-flow__step">
+              <span class="project-flow__icon">📡</span>
+              <span class="project-flow__label">Broker MQTT</span>
+            </div>
+            <span class="project-flow__arrow">→</span>
+            <div class="project-flow__step">
+              <span class="project-flow__icon">🟢</span>
+              <span class="project-flow__label">Node.js + Express</span>
+            </div>
+            <span class="project-flow__arrow">→</span>
+            <div class="project-flow__step">
+              <span class="project-flow__icon">🗄️</span>
+              <span class="project-flow__label">Supabase (PG)</span>
+            </div>
+            <span class="project-flow__arrow">→</span>
+            <div class="project-flow__step">
+              <span class="project-flow__icon">⚡</span>
+              <span class="project-flow__label">Socket.IO</span>
+            </div>
+            <span class="project-flow__arrow">→</span>
+            <div class="project-flow__step">
+              <span class="project-flow__icon">🖥️</span>
+              <span class="project-flow__label">React Dashboard</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-heading reveal-element">Galeria</h2>
+        <p class="project-gallery__sub reveal-element">Telas do sistema em operação.</p>
+        <div class="project-gallery">
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/dashboard.png" alt="Visão geral das máquinas" loading="lazy" />
+            <figcaption>Visão geral — máquinas em tempo real</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/gerenciamento-maquinas.png" alt="Gerenciamento de máquinas" loading="lazy" />
+            <figcaption>Gerenciamento de máquinas e tópicos MQTT</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/monitoramento-ciclo.png" alt="Monitoramento de ciclo" loading="lazy" />
+            <figcaption>Monitoramento de ciclo com telemetria</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/telemetria.png" alt="Gráfico de telemetria" loading="lazy" />
+            <figcaption>Gráfico de telemetria do ciclo</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/ciclo-pneus.png" alt="Resumo do ciclo e pneus" loading="lazy" />
+            <figcaption>Registro de pneus e resumo do ciclo</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/historico-ciclos.png" alt="Histórico de ciclos" loading="lazy" />
+            <figcaption>Histórico de ciclos com filtros</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/registros-leituras.png" alt="Registros de leituras" loading="lazy" />
+            <figcaption>Registros de leituras com status colorido</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/notificacoes.png" alt="Painel de notificações" loading="lazy" />
+            <figcaption>Painel de notificações e alertas</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/temperatura.png" alt="Monitoramento de temperatura" loading="lazy" />
+            <figcaption>Medidor e histórico de temperatura</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element">
+            <img src="../assets/portfolio/habilita-imp/metricas.png" alt="Métricas de vibração e produção" loading="lazy" />
+            <figcaption>Vibração, produção e pressões</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-section--alt">
+      <div class="container project-section__grid">
+        <div class="project-section__label reveal-element">Stack</div>
+        <div class="project-section__content">
+          <div class="project-stack reveal-element">
+            <div class="project-stack__item">
+              <span class="project-stack__name">React 19 + Vite</span>
+              <span class="project-stack__role">Frontend SPA com rotas e build otimizado</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Material UI 7</span>
+              <span class="project-stack__role">Componentes e tema dark premium</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">ApexCharts</span>
+              <span class="project-stack__role">Gráficos, gauges e telemetria visual</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Node.js + Express 5</span>
+              <span class="project-stack__role">API REST e servidor HTTP</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Socket.IO</span>
+              <span class="project-stack__role">WebSocket bidirecional por empresa</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">MQTT v5</span>
+              <span class="project-stack__role">Ingestão de dados industriais</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Supabase + PostgreSQL</span>
+              <span class="project-stack__role">Auth, RLS, persistência e views SQL</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Framer Motion + @dnd-kit</span>
+              <span class="project-stack__role">Animações e drag-and-drop no overview</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-cta">
+      <div class="container project-cta__inner reveal-element">
+        <p class="project-cta__text">Código aberto no GitHub</p>
+        <div class="project-links" style="margin-bottom:0;justify-content:center;">
+          <a href="https://github.com/brunomiotto08/IoT-MQTT" target="_blank" rel="noopener" class="btn btn--primary">github.com/brunomiotto08/IoT-MQTT ↗</a>
+          <a href="../index.html#portfolio" class="btn btn--ghost">Voltar ao portfólio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">© 2026 Bruno Miotto — Caxias do Sul, RS</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
