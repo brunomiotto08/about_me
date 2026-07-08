@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habilita Website — Bruno Miotto</title>
+  <meta name="description" content="Site institucional one-page em React para empresa de automação industrial — serviços, projetos, trajetória e contato com animações e cursor customizado." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="project-page" data-i18n-title="meta.project.website.title" data-i18n-desc="meta.project.website.desc">
+
+  <nav class="nav nav--scrolled" id="nav">
+    <ul class="nav__links">
+      <li><a href="../index.html#inicio" class="nav__link" data-i18n="nav.home">início</a></li>
+      <li><a href="../index.html#portfolio" class="nav__link" data-i18n="nav.portfolio">portfólio</a></li>
+      <li><a href="../index.html#contato" class="nav__link" data-i18n="nav.contact">contato</a></li>
+    </ul>
+    <div class="nav__actions">
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:aria.lang">
+        <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+        <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+        <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" data-i18n-attr="aria-label:aria.menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="../index.html#inicio" class="mobile-menu__link" data-i18n="nav.home">início</a></li>
+      <li><a href="../index.html#portfolio" class="mobile-menu__link" data-i18n="nav.portfolio">portfólio</a></li>
+      <li><a href="../index.html#contato" class="mobile-menu__link" data-i18n="nav.contact">contato</a></li>
+    </ul>
+    <div class="lang-switch lang-switch--mobile" role="group" data-i18n-attr="aria-label:aria.lang">
+      <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+      <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+      <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+
+  <main class="project">
+
+    <header class="project-hero">
+      <div class="container project-hero__inner">
+        <a href="../index.html#portfolio" class="project-back reveal-element" data-i18n="project.back">← Voltar ao portfólio</a>
+
+        <div class="project-hero__meta reveal-element">
+          <span class="project-hero__type" data-i18n="project.website.type">SPA · Site Institucional</span>
+          <span class="project-hero__year">2026</span>
+        </div>
+
+        <h1 class="project-hero__title reveal-element">Habilita Website</h1>
+        <p class="project-hero__subtitle reveal-element" data-i18n-html="project.website.subtitle">
+          <strong>Site one-page</strong> para a Habilita — empresa de automação industrial, painéis elétricos e conformidade NR10/NR12. Apresenta serviços, portfólio de projetos, trajetória, processo de trabalho, tecnologias parceiras e formulário de contato em uma experiência visual premium.
+        </p>
+
+        <div class="project-hero__tags reveal-element">
+          <span class="portfolio-card__tag">React</span>
+          <span class="portfolio-card__tag">TypeScript</span>
+          <span class="portfolio-card__tag">Vite</span>
+          <span class="portfolio-card__tag">Tailwind CSS</span>
+        </div>
+
+        <div class="project-links reveal-element">
+          <a href="https://habilita-site.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="project.links.live">Ver site ao vivo ↗</a>
+          <a href="https://github.com/brunomiotto08/habilita_site" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="project.links.github">GitHub ↗</a>
+        </div>
+
+        <div class="project-hero__cover reveal-element">
+          <img src="../assets/portfolio/habilita-website/hero.png" alt="Hero do site institucional Habilita" />
+        </div>
+      </div>
+    </header>
+
+    <section class="project-section">
+      <div class="container project-section__grid">
+        <div class="project-section__label reveal-element" data-i18n="project.about">Sobre</div>
+        <div class="project-section__content">
+          <p class="project-text reveal-element" data-i18n-html="project.website.about.p1">
+            O <strong>Habilita Website</strong> foi desenvolvido como vitrine digital da empresa — traduzindo credibilidade técnica em uma interface moderna, com narrativa clara para decisores industriais que buscam automação, painéis elétricos e engenharia de precisão.
+          </p>
+          <p class="project-text reveal-element" data-i18n-html="project.website.about.p2">
+            Construído como SPA estática com React e Vite, o site prioriza performance, animações suaves e componentes reutilizáveis — cursor customizado, contadores animados, text reveal e cards interativos — sem backend, ideal para hospedagem estática.
+          </p>
+          <div class="project-versions reveal-element">
+            <div class="project-versions__item">
+              <span class="project-versions__ver">01</span>
+              <span class="project-versions__desc" data-i18n="project.website.h1">Hero com slider de produtos e CTAs para serviços e contato</span>
+            </div>
+            <div class="project-versions__item">
+              <span class="project-versions__ver">02</span>
+              <span class="project-versions__desc" data-i18n="project.website.h2">Contadores animados (+6 anos, 150+ projetos, 100% conformidade)</span>
+            </div>
+            <div class="project-versions__item">
+              <span class="project-versions__ver">03</span>
+              <span class="project-versions__desc" data-i18n="project.website.h3">Cursor customizado e microinterações em toda a navegação</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-heading reveal-element" data-i18n="project.features">Funcionalidades</h2>
+        <div class="project-features">
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">01</span>
+            <h3 class="project-feature__title" data-i18n="project.website.f01.title">Hero interativo</h3>
+            <p class="project-feature__desc" data-i18n="project.website.f01.desc">Slides alternando painéis elétricos, CLPs e visão explodida de quadros — com badge de engenharia, headline em destaque e botões de conversão.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">02</span>
+            <h3 class="project-feature__title" data-i18n="project.website.f02.title">Serviços em bento grid</h3>
+            <p class="project-feature__desc" data-i18n="project.website.f02.desc">Cards para automação industrial, painéis elétricos, NR10/NR12 e integração de chão de fábrica — com ícones, descrições e links de aprofundamento.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">03</span>
+            <h3 class="project-feature__title" data-i18n="project.website.f03.title">Portfólio de projetos</h3>
+            <p class="project-feature__desc" data-i18n="project.website.f03.desc">Grid de cases reais (NR12, QGBT, EtherCAT, SCADA) com tags técnicas, destaque editorial e estatísticas da empresa.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">04</span>
+            <h3 class="project-feature__title" data-i18n="project.website.f04.title">Trajetória & processo</h3>
+            <p class="project-feature__desc" data-i18n="project.website.f04.desc">Timeline vertical com marcos de 2020 a 2024 e fluxo horizontal em 5 etapas — do diagnóstico técnico ao suporte contínuo.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">05</span>
+            <h3 class="project-feature__title" data-i18n="project.website.f05.title">Tecnologia & parceiros</h3>
+            <p class="project-feature__desc" data-i18n="project.website.f05.desc">Seção de equipamentos e plataformas — OMRON, EtherCAT, Siemens — reforçando credibilidade com fabricantes líderes do mercado.</p>
+          </article>
+          <article class="project-feature reveal-element">
+            <span class="project-feature__num">06</span>
+            <h3 class="project-feature__title" data-i18n="project.website.f06.title">Contato & UX premium</h3>
+            <p class="project-feature__desc" data-i18n="project.website.f06.desc">Formulário institucional, navbar flutuante com glassmorphism, scroll suave entre seções e animações de entrada no viewport.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-section--alt">
+      <div class="container project-section__grid">
+        <div class="project-section__label reveal-element" data-i18n="project.arch">Arquitetura</div>
+        <div class="project-section__content">
+          <p class="project-text reveal-element" data-i18n-html="project.website.arch.p">
+            A arquitetura segue o padrão de componentes por seção: cada bloco da página (Hero, Serviços, Projetos, etc.) é um componente React independente, estilizado com Tailwind e animações customizadas, compilado pelo Vite em assets estáticos prontos para deploy.
+          </p>
+          <div class="project-flow reveal-element">
+            <div class="project-flow__line" aria-hidden="true"></div>
+            <ol class="project-flow__steps">
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">🏠</span>
+                <span class="project-flow__label" data-i18n="project.website.flow.hero">Hero</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">⚙️</span>
+                <span class="project-flow__label" data-i18n="project.website.flow.serv">Serviços</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">📁</span>
+                <span class="project-flow__label" data-i18n="project.website.flow.proj">Projetos</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">📈</span>
+                <span class="project-flow__label" data-i18n="project.website.flow.traj">Trajetória</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">🔄</span>
+                <span class="project-flow__label" data-i18n="project.website.flow.proc">Processo</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">🔌</span>
+                <span class="project-flow__label" data-i18n="project.website.flow.tech">Tecnologia</span>
+              </li>
+              <li class="project-flow__step">
+                <span class="project-flow__node"></span>
+                <span class="project-flow__icon">✉️</span>
+                <span class="project-flow__label" data-i18n="project.website.flow.cta">Contato</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="container">
+        <h2 class="project-heading reveal-element" data-i18n="project.gallery">Galeria</h2>
+        <p class="project-gallery__sub reveal-element" data-i18n="project.gallery.sub">Telas do sistema em operação — clique para ampliar.</p>
+        <div class="project-gallery">
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c1">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c1">
+              <img src="../assets/portfolio/habilita-website/hero.png" alt="Hero automação industrial" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c1">Hero — automação industrial no mais alto nível</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c2">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c2">
+              <img src="../assets/portfolio/habilita-website/hero-painel.png" alt="Hero painel elétrico" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c2">Hero — painel elétrico aberto com componentes</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c3">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c3">
+              <img src="../assets/portfolio/habilita-website/hero-clp.png" alt="Hero CLP Mitsubishi" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c3">Hero — CLP Mitsubishi programável</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c4">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c4">
+              <img src="../assets/portfolio/habilita-website/servicos.png" alt="Seção serviços" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c4">Serviços — automação e painéis elétricos</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c5">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c5">
+              <img src="../assets/portfolio/habilita-website/projetos.png" alt="Seção projetos" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c5">Projetos — portfólio com estatísticas</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c6">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c6">
+              <img src="../assets/portfolio/habilita-website/trajetoria.png" alt="Seção trajetória" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c6">Trajetória — timeline de experiência</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c7">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c7">
+              <img src="../assets/portfolio/habilita-website/processo.png" alt="Seção processo" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c7">Processo — fluxo em 5 etapas</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c8">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c8">
+              <img src="../assets/portfolio/habilita-website/tecnologia.png" alt="Seção tecnologia" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c8">Tecnologia — OMRON, EtherCAT e Siemens</figcaption>
+          </figure>
+          <figure class="project-gallery__item reveal-element" data-lightbox data-i18n-caption="project.website.gallery.c9">
+            <button type="button" class="project-gallery__trigger" data-i18n-attr="aria-label:project.website.gallery.c9">
+              <img src="../assets/portfolio/habilita-website/contato.png" alt="Seção contato" loading="lazy" />
+              <span class="project-gallery__zoom" aria-hidden="true">⤢</span>
+            </button>
+            <figcaption data-i18n="project.website.gallery.c9">Contato — formulário institucional</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-section--alt">
+      <div class="container project-section__grid">
+        <div class="project-section__label reveal-element" data-i18n="project.stack">Stack</div>
+        <div class="project-section__content">
+          <div class="project-stack reveal-element">
+            <div class="project-stack__item">
+              <span class="project-stack__name">React + TypeScript</span>
+              <span class="project-stack__role" data-i18n="project.website.stack.react">SPA tipada com hot reload e build otimizado</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Tailwind CSS</span>
+              <span class="project-stack__role" data-i18n="project.website.stack.tailwind">Design system utilitário e responsivo</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Vite</span>
+              <span class="project-stack__role" data-i18n="project.website.stack.vite">Bundler rápido com tree-shaking de assets</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Animações customizadas</span>
+              <span class="project-stack__role" data-i18n="project.website.stack.anim">Text reveal, contadores e transições de scroll</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">Custom Cursor</span>
+              <span class="project-stack__role" data-i18n="project.website.stack.cursor">Hook useMousePosition e cursor circular customizado</span>
+            </div>
+            <div class="project-stack__item">
+              <span class="project-stack__name">UI Components</span>
+              <span class="project-stack__role" data-i18n="project.website.stack.components">BentoCard, CountUp, SpotlightCard reutilizáveis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-cta">
+      <div class="container project-cta__inner reveal-element">
+        <p class="project-cta__text" data-i18n="project.cta.text">Quer ver mais projetos?</p>
+        <a href="../index.html#portfolio" class="btn btn--primary" data-i18n="project.cta.btn">Voltar ao portfólio</a>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <button type="button" class="lightbox__close" data-lightbox-close data-i18n-attr="aria-label:aria.lightbox.close">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" data-i18n-attr="aria-label:aria.lightbox.prev">‹</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" data-i18n-attr="aria-label:aria.lightbox.next">›</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 Bruno Miotto — Caxias do Sul, RS</p>
+    </div>
+  </footer>
+
+  <script src="../i18n.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

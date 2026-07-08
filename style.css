@@ -603,6 +603,9 @@ body.is-lang-switching .hero__role[data-i18n] {
   gap: 0.45rem;
   margin-bottom: 2.5rem;
 }
+.project-hero__tags:has(+ .project-links) {
+  margin-bottom: 1.25rem;
+}
 
 .project-hero__cover {
   border-radius: 12px;
