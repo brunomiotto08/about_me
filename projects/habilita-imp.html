@@ -71,7 +71,7 @@
         <div class="project-impact reveal-element">
           <div class="project-impact__col">
             <span class="project-impact__label" data-i18n="case.before">Antes</span>
-            <p class="project-impact__text" data-i18n="portfolio.habilita.before">Dados espalhados em PLCs, sem visibilidade central, histórico confiável ou alertas em tempo real no chão de fábrica.</p>
+            <p class="project-impact__text" data-i18n="portfolio.habilita.before">Dados espalhados em CLPs, sem visibilidade central, histórico confiável ou alertas em tempo real no chão de fábrica.</p>
           </div>
           <div class="project-impact__col">
             <span class="project-impact__label project-impact__label--solution" data-i18n="case.solution">Solução</span>
@@ -108,7 +108,7 @@
         <div class="project-section__label reveal-element" data-i18n="project.about">Sobre</div>
         <div class="project-section__content">
           <p class="project-text reveal-element" data-i18n-html="project.about.p1">
-            O <strong>Habilita I.M.P.</strong> resolve um problema real do chão de fábrica: dados espalhados em PLCs sem visibilidade central, histórico confiável ou alertas em tempo real. A plataforma recebe telemetria de sensores e CLPs via broker MQTT, processa no backend Node.js, persiste no Supabase e entrega uma interface React moderna para operadores, supervisores e administradores.
+            O <strong>Habilita I.M.P.</strong> resolve um problema real do chão de fábrica: dados espalhados em CLPs sem visibilidade central, histórico confiável ou alertas em tempo real. A plataforma recebe telemetria de sensores e CLPs via broker MQTT, processa no backend Node.js, persiste no Supabase e entrega uma interface React moderna para operadores, supervisores e administradores.
           </p>
           <p class="project-text reveal-element" data-i18n-html="project.about.p2">
             O sistema é <strong>multi-tenant</strong> — cada fábrica/cliente opera de forma isolada com Row Level Security (RLS) — e evoluiu em quatro versões, da leitura básica de temperatura e vibração até a rastreabilidade completa de pneus vinculados a cada ciclo de autoclave.
@@ -178,7 +178,7 @@
         <div class="project-section__label reveal-element" data-i18n="project.arch">Arquitetura</div>
         <div class="project-section__content">
           <p class="project-text reveal-element" data-i18n-html="project.arch.p">
-            O fluxo de leitura MQTT segue 9 etapas: o PLC publica JSON no tópico
+            O fluxo de leitura MQTT segue 9 etapas: o CLP publica JSON no tópico
             <code class="project-code" style="display:inline;padding:0.15rem 0.4rem;margin:0;font-size:0.8rem;">empresas/{empresa_id}/maquinas/{uuid}/{tipo}</code>,
             o backend valida, persiste em <code>leituras_maquina</code>, verifica limites, gera alarmes se necessário e emite eventos via Socket.IO para a sala <code>empresa_{id}</code>.
           </p>
@@ -187,7 +187,7 @@
             <ol class="project-flow__steps">
               <li class="project-flow__step">
                 <span class="project-flow__num">01</span>
-                <span class="project-flow__label" data-i18n="project.flow.plc">PLC / Sensores</span>
+                <span class="project-flow__label" data-i18n="project.flow.plc">CLP / Sensores</span>
               </li>
               <li class="project-flow__step">
                 <span class="project-flow__num">02</span>
