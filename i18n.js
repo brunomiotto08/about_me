@@ -2,7 +2,7 @@
   'use strict';
 
   const STORAGE_KEY = 'site-lang';
-  const DEFAULT_LANG = 'pt-BR';
+  const DEFAULT_LANG = 'en-US';
   const LANGS = ['pt-BR', 'en-US', 'es'];
 
   const strings = {
@@ -64,9 +64,40 @@
       'skills.sub': 'Tecnologias que uso para entregar sistemas em produção — não é currículo, é ferramenta de entrega.',
       'skills.work': 'Trabalho',
       'skills.languages': 'Linguagens',
+      'skills.development': 'Desenvolvimento',
       'skills.tools': 'Ferramentas & Integrações',
       'skills.ai': 'Ferramentas de IA',
       'skills.creation': 'Criação & Conteúdo',
+
+      'skill.mvp.name': 'Minimum Viable Product',
+      'skill.mvp.desc': 'Validação rápida de ideia com escopo enxuto e deploy',
+      'skill.saas.name': 'SaaS Development',
+      'skill.saas.desc': 'Produtos multi-tenant, assinatura e operação contínua',
+      'skill.webapp.name': 'Web Application Development',
+      'skill.webapp.desc': 'Apps web completos com auth, API e interface responsiva',
+      'skill.webdev.name': 'Web Development',
+      'skill.webdev.desc': 'Sites e aplicações web de ponta a ponta',
+      'skill.fullstack.name': 'Full-Stack Development',
+      'skill.fullstack.desc': 'Front-end, back-end, banco e deploy integrados',
+      'skill.architecture.name': 'Software Architecture & Design',
+      'skill.architecture.desc': 'Modelagem de sistemas escaláveis e manuteníveis',
+      'skill.dbarch.name': 'Database Architecture',
+      'skill.dbarch.desc': 'Modelagem, normalização e performance de dados',
+      'skill.support.name': 'Technical Support',
+      'skill.support.desc': 'Correções, manutenção e suporte pós-entrega',
+      'skill.react.desc': 'Interfaces SPA com componentes reutilizáveis',
+      'skill.node.desc': 'APIs, servidores e lógica back-end em JavaScript',
+      'skill.tailwind.desc': 'Design system utilitário e responsivo',
+      'skill.apidev.name': 'API Development',
+      'skill.apidev.desc': 'Criação de endpoints REST e contratos de integração',
+      'skill.apiint.name': 'API Integration',
+      'skill.apiint.desc': 'Conexão entre sistemas, webhooks e terceiros',
+      'skill.ai.name': 'Artificial Intelligence',
+      'skill.ai.desc': 'Automação inteligente, LLMs e fluxos com IA',
+      'skill.landing.name': 'Landing Page',
+      'skill.landing.desc': 'Páginas de conversão com narrativa e design focado',
+      'skill.website.name': 'Website',
+      'skill.website.desc': 'Sites institucionais e presença digital profissional',
 
       'skill.delphi.desc': 'Desenvolvimento e manutenção de sistemas',
       'skill.sourcetree.desc': 'Controle de versão e Git visual',
@@ -374,9 +405,40 @@
       'skills.sub': 'Technologies I use to deliver production systems — not a résumé, a delivery toolkit.',
       'skills.work': 'Work',
       'skills.languages': 'Languages',
+      'skills.development': 'Development',
       'skills.tools': 'Tools & Integrations',
       'skills.ai': 'AI Tools',
       'skills.creation': 'Creation & Content',
+
+      'skill.mvp.name': 'Minimum Viable Product',
+      'skill.mvp.desc': 'Fast idea validation with lean scope and deploy',
+      'skill.saas.name': 'SaaS Development',
+      'skill.saas.desc': 'Multi-tenant products, subscriptions, and ongoing ops',
+      'skill.webapp.name': 'Web Application Development',
+      'skill.webapp.desc': 'Full web apps with auth, API, and responsive UI',
+      'skill.webdev.name': 'Web Development',
+      'skill.webdev.desc': 'End-to-end websites and web applications',
+      'skill.fullstack.name': 'Full-Stack Development',
+      'skill.fullstack.desc': 'Integrated front-end, back-end, database, and deploy',
+      'skill.architecture.name': 'Software Architecture & Design',
+      'skill.architecture.desc': 'Scalable, maintainable system modeling',
+      'skill.dbarch.name': 'Database Architecture',
+      'skill.dbarch.desc': 'Data modeling, normalization, and performance',
+      'skill.support.name': 'Technical Support',
+      'skill.support.desc': 'Fixes, maintenance, and post-delivery support',
+      'skill.react.desc': 'SPA interfaces with reusable components',
+      'skill.node.desc': 'APIs, servers, and back-end logic in JavaScript',
+      'skill.tailwind.desc': 'Utility-first responsive design system',
+      'skill.apidev.name': 'API Development',
+      'skill.apidev.desc': 'REST endpoints and integration contracts',
+      'skill.apiint.name': 'API Integration',
+      'skill.apiint.desc': 'System connections, webhooks, and third parties',
+      'skill.ai.name': 'Artificial Intelligence',
+      'skill.ai.desc': 'Intelligent automation, LLMs, and AI-powered flows',
+      'skill.landing.name': 'Landing Page',
+      'skill.landing.desc': 'Conversion pages with focused narrative and design',
+      'skill.website.name': 'Website',
+      'skill.website.desc': 'Institutional sites and professional digital presence',
 
       'skill.delphi.desc': 'System development and maintenance',
       'skill.sourcetree.desc': 'Version control and visual Git',
@@ -684,9 +746,40 @@
       'skills.sub': 'Tecnologías que uso para entregar sistemas en producción — no es currículum, es herramienta de entrega.',
       'skills.work': 'Trabajo',
       'skills.languages': 'Lenguajes',
+      'skills.development': 'Desarrollo',
       'skills.tools': 'Herramientas e Integraciones',
       'skills.ai': 'Herramientas de IA',
       'skills.creation': 'Creación y Contenido',
+
+      'skill.mvp.name': 'Minimum Viable Product',
+      'skill.mvp.desc': 'Validación rápida de idea con alcance reducido y deploy',
+      'skill.saas.name': 'SaaS Development',
+      'skill.saas.desc': 'Productos multi-tenant, suscripción y operación continua',
+      'skill.webapp.name': 'Web Application Development',
+      'skill.webapp.desc': 'Apps web completas con auth, API e interfaz responsiva',
+      'skill.webdev.name': 'Web Development',
+      'skill.webdev.desc': 'Sitios y aplicaciones web de punta a punta',
+      'skill.fullstack.name': 'Full-Stack Development',
+      'skill.fullstack.desc': 'Front-end, back-end, base de datos y deploy integrados',
+      'skill.architecture.name': 'Software Architecture & Design',
+      'skill.architecture.desc': 'Modelado de sistemas escalables y mantenibles',
+      'skill.dbarch.name': 'Database Architecture',
+      'skill.dbarch.desc': 'Modelado, normalización y rendimiento de datos',
+      'skill.support.name': 'Technical Support',
+      'skill.support.desc': 'Correcciones, mantenimiento y soporte post-entrega',
+      'skill.react.desc': 'Interfaces SPA con componentes reutilizables',
+      'skill.node.desc': 'APIs, servidores y lógica back-end en JavaScript',
+      'skill.tailwind.desc': 'Sistema de diseño utilitario y responsivo',
+      'skill.apidev.name': 'API Development',
+      'skill.apidev.desc': 'Creación de endpoints REST y contratos de integración',
+      'skill.apiint.name': 'API Integration',
+      'skill.apiint.desc': 'Conexión entre sistemas, webhooks y terceros',
+      'skill.ai.name': 'Artificial Intelligence',
+      'skill.ai.desc': 'Automatización inteligente, LLMs y flujos con IA',
+      'skill.landing.name': 'Landing Page',
+      'skill.landing.desc': 'Páginas de conversión con narrativa y diseño enfocado',
+      'skill.website.name': 'Website',
+      'skill.website.desc': 'Sitios institucionales y presencia digital profesional',
 
       'skill.delphi.desc': 'Desarrollo y mantenimiento de sistemas',
       'skill.sourcetree.desc': 'Control de versiones y Git visual',
@@ -948,7 +1041,9 @@
   }
 
   function getLang() {
-    return normalizeLang(localStorage.getItem(STORAGE_KEY) || navigator.language || DEFAULT_LANG);
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) return normalizeLang(stored);
+    return DEFAULT_LANG;
   }
 
   function t(key, lang) {

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bruno Miotto</title>
+  <link rel="icon" type="image/png" href="assets/favicon/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -22,8 +24,8 @@
     </ul>
     <div class="nav__actions">
       <div class="lang-switch" role="group" data-i18n-attr="aria-label:aria.lang">
-        <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
-        <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+        <button type="button" class="lang-switch__btn" data-lang="pt-BR" aria-pressed="false">PT</button>
+        <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="en-US" aria-pressed="true">EN</button>
         <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
       </div>
       <button class="nav__hamburger" id="hamburger" data-i18n-attr="aria-label:aria.menu">
@@ -41,8 +43,8 @@
       <li><a href="#contato" class="mobile-menu__link" data-i18n="nav.contact">contato</a></li>
     </ul>
     <div class="lang-switch lang-switch--mobile" role="group" data-i18n-attr="aria-label:aria.lang">
-      <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
-      <button type="button" class="lang-switch__btn" data-lang="en-US" aria-pressed="false">EN</button>
+      <button type="button" class="lang-switch__btn" data-lang="pt-BR" aria-pressed="false">PT</button>
+      <button type="button" class="lang-switch__btn lang-switch__btn--active" data-lang="en-US" aria-pressed="true">EN</button>
       <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
     </div>
   </div>
@@ -314,10 +316,126 @@
             </div>
           </div>
 
+          <!-- DESENVOLVIMENTO -->
+          <div class="skill-group reveal-element">
+            <h3 class="skill-group__title" data-i18n="skills.development">Desenvolvimento</h3>
+            <div class="skill-cards">
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.mvp.name">Minimum Viable Product</span>
+                <span class="skill-item__desc" data-i18n="skill.mvp.desc">Validação rápida de ideia com escopo enxuto e deploy</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.saas.name">SaaS Development</span>
+                <span class="skill-item__desc" data-i18n="skill.saas.desc">Produtos multi-tenant, assinatura e operação contínua</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.webapp.name">Web Application Development</span>
+                <span class="skill-item__desc" data-i18n="skill.webapp.desc">Apps web completos com auth, API e interface responsiva</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.webdev.name">Web Development</span>
+                <span class="skill-item__desc" data-i18n="skill.webdev.desc">Sites e aplicações web de ponta a ponta</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                    <polyline points="2 17 12 22 22 17"/>
+                    <polyline points="2 12 12 17 22 12"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.fullstack.name">Full-Stack Development</span>
+                <span class="skill-item__desc" data-i18n="skill.fullstack.desc">Front-end, back-end, banco e deploy integrados</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"/>
+                    <rect x="14" y="3" width="7" height="7"/>
+                    <rect x="14" y="14" width="7" height="7"/>
+                    <rect x="3" y="14" width="7" height="7"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.architecture.name">Software Architecture & Design</span>
+                <span class="skill-item__desc" data-i18n="skill.architecture.desc">Modelagem de sistemas escaláveis e manuteníveis</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.dbarch.name">Database Architecture</span>
+                <span class="skill-item__desc" data-i18n="skill.dbarch.desc">Modelagem, normalização e performance de dados</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--red">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/>
+                    <path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.support.name">Technical Support</span>
+                <span class="skill-item__desc" data-i18n="skill.support.desc">Correções, manutenção e suporte pós-entrega</span>
+              </div>
+            </div>
+          </div>
+
           <!-- FERRAMENTAS & INTEGRAÇÕES -->
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title" data-i18n="skills.tools">Ferramentas & Integrações</h3>
             <div class="skill-cards">
+              <div class="skill-item">
+                <div class="skill-item__icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+                </div>
+                <span class="skill-item__name">React</span>
+                <span class="skill-item__desc" data-i18n="skill.react.desc">Interfaces SPA com componentes reutilizáveis</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                </div>
+                <span class="skill-item__name">Node.js</span>
+                <span class="skill-item__desc" data-i18n="skill.node.desc">APIs, servidores e lógica back-end em JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+                </div>
+                <span class="skill-item__name">Tailwind CSS</span>
+                <span class="skill-item__desc" data-i18n="skill.tailwind.desc">Design system utilitário e responsivo</span>
+              </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" />
@@ -343,6 +461,29 @@
                 <span class="skill-item__desc" data-i18n="skill.rest.desc">Consumo e integração de APIs</span>
               </div>
               <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.apidev.name">API Development</span>
+                <span class="skill-item__desc" data-i18n="skill.apidev.desc">Criação de endpoints REST e contratos de integração</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3"/>
+                    <circle cx="6" cy="12" r="3"/>
+                    <circle cx="18" cy="19" r="3"/>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.apiint.name">API Integration</span>
+                <span class="skill-item__desc" data-i18n="skill.apiint.desc">Conexão entre sistemas, webhooks e terceiros</span>
+              </div>
+              <div class="skill-item">
                 <div class="skill-item__icon icon-bg icon-bg--green">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
@@ -362,6 +503,23 @@
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title" data-i18n="skills.ai">Ferramentas de IA</h3>
             <div class="skill-cards">
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/>
+                    <path d="M8.24 9.93A4 4 0 0 1 12 2"/>
+                    <path d="M12 22a4 4 0 0 0 4-4c0-1.95-1.4-3.58-3.25-3.93"/>
+                    <path d="M15.76 14.07A4 4 0 0 1 12 22"/>
+                    <path d="M2 12a4 4 0 0 1 4-4c1.95 0 3.58 1.4 3.93 3.25"/>
+                    <path d="M9.93 15.76A4 4 0 0 1 2 12"/>
+                    <path d="M22 12a4 4 0 0 0-4-4c-1.95 0-3.58 1.4-3.93 3.25"/>
+                    <path d="M14.07 8.24A4 4 0 0 1 22 12"/>
+                    <circle cx="12" cy="12" r="2"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.ai.name">Artificial Intelligence</span>
+                <span class="skill-item__desc" data-i18n="skill.ai.desc">Automação inteligente, LLMs e fluxos com IA</span>
+              </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.simpleicons.org/anthropic/D97757" alt="Claude" />
@@ -400,6 +558,30 @@
           <div class="skill-group reveal-element">
             <h3 class="skill-group__title" data-i18n="skills.creation">Criação & Conteúdo</h3>
             <div class="skill-cards">
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.landing.name">Landing Page</span>
+                <span class="skill-item__desc" data-i18n="skill.landing.desc">Páginas de conversão com narrativa e design focado</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__icon icon-bg icon-bg--green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18"/>
+                    <path d="M9 21V9"/>
+                  </svg>
+                </div>
+                <span class="skill-item__name" data-i18n="skill.website.name">Website</span>
+                <span class="skill-item__desc" data-i18n="skill.website.desc">Sites institucionais e presença digital profissional</span>
+              </div>
               <div class="skill-item">
                 <div class="skill-item__icon">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" alt="Canva" />
