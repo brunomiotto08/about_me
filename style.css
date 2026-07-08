@@ -11,9 +11,9 @@
   --border:       rgba(255,255,255,0.07);
   --border-hover: rgba(255,255,255,0.14);
   --accent:       #4a9eff;
-  --text:         #e8e8f0;
-  --text-muted:   #6b6b80;
-  --text-dim:     #44445a;
+  --text:         #eeeef6;
+  --text-muted:   #9898b2;
+  --text-dim:     #6a6a84;
   --success:      #3dffa0;
   --warning:      #ffb340;
   --future:       #a78bfa;
@@ -290,18 +290,20 @@ body.is-lang-switching .hero__role[data-i18n] {
   font-size: 0.9rem;
   color: var(--accent);
   font-weight: 400;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.85rem;
   letter-spacing: 0.01em;
+  line-height: 1.5;
+  max-width: 520px;
 }
 
-.hero__summary {
-  font-size: 0.93rem;
+.hero__pitch {
+  font-size: 1rem;
   color: var(--text-muted);
-  line-height: 1.8;
-  margin-bottom: 1.75rem;
-  max-width: 460px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+  font-weight: 400;
 }
-.hero__summary strong { color: var(--text); font-weight: 500; }
 
 .hero__meta {
   display: flex;
@@ -451,7 +453,53 @@ body.is-lang-switching .hero__role[data-i18n] {
 .xp-card__role { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.35rem; }
 .xp-card__desc { font-size: 0.78rem; color: var(--text-dim); line-height: 1.6; }
 
+/* ── SERVIÇOS ── */
+.services__list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 1.5rem 3rem;
+  align-items: baseline;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.18s;
+}
+.service-row:hover { background: rgba(74,158,255,0.025); }
+.service-row__left {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+}
+.service-row__num {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  opacity: 0.5;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+.service-row__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+.service-row__desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
 /* ── PORTFÓLIO ── */
+.portfolio__grid--cases {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -471,6 +519,19 @@ body.is-lang-switching .hero__role[data-i18n] {
   border-color: var(--border-hover);
   transform: translateY(-4px);
   box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+.portfolio-card--featured {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+.portfolio-card--featured .portfolio-card__cover {
+  min-height: 100%;
+}
+.portfolio-card--featured .portfolio-card__cover img {
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .portfolio-card__cover {
@@ -506,8 +567,8 @@ body.is-lang-switching .hero__role[data-i18n] {
 .portfolio-card__body {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  padding: 1.25rem 1.35rem 1.35rem;
+  gap: 0;
+  padding: 1.35rem 1.5rem 1.5rem;
   flex: 1;
 }
 .portfolio-card__title {
@@ -543,6 +604,60 @@ body.is-lang-switching .hero__role[data-i18n] {
   margin-top: 0.25rem;
   transition: gap 0.2s;
 }
+
+/* ── CASE HEADER (nos cards) ── */
+.case-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1.25rem;
+}
+.case-header__badge {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  margin-bottom: 0.2rem;
+}
+.case-header__problem {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.portfolio-card__metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+  margin-bottom: 0.85rem;
+}
+.metric-pill {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  background: rgba(74,158,255,0.05);
+  border: 1px solid rgba(74,158,255,0.12);
+  border-radius: 6px;
+}
+.metric-pill__value {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.metric-pill__label {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  line-height: 1.3;
+}
+
 
 /* ── PROJECT PAGE ── */
 .project-page { padding-top: 70px; }
@@ -605,6 +720,40 @@ body.is-lang-switching .hero__role[data-i18n] {
 }
 .project-hero__tags:has(+ .project-links) {
   margin-bottom: 1.25rem;
+}
+
+.project-impact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.project-impact__col { display: flex; flex-direction: column; gap: 0.35rem; }
+.project-impact__label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--warning);
+}
+.project-impact__label--solution { color: var(--accent); }
+.project-impact__label--result { color: var(--success); }
+.project-impact__text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.project-impact__metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  grid-column: 1 / -1;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 
 .project-hero__cover {
@@ -1228,7 +1377,16 @@ body.is-lang-switching .hero__role[data-i18n] {
   font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 300;
   letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+.footer__sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
   margin-bottom: 2rem;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 .footer__links {
   display: flex;
@@ -1259,6 +1417,12 @@ body.is-lang-switching .hero__role[data-i18n] {
   .books__grid { grid-template-columns: 1fr; }
   .xp-grid { grid-template-columns: 1fr; }
   .portfolio__grid { grid-template-columns: 1fr; }
+  .portfolio__grid--cases { grid-template-columns: 1fr; }
+  .portfolio-card--featured { grid-template-columns: 1fr; }
+  .service-row { grid-template-columns: 1fr; gap: 0.4rem; }
+  .service-row__left { gap: 0.6rem; }
+  .project-impact { grid-template-columns: 1fr; }
+
   .project-section__grid { grid-template-columns: 1fr; gap: 1rem; }
   .project-flow { padding: 1.5rem 1rem; }
   .project-flow__line { display: none; }

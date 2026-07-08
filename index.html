@@ -15,11 +15,9 @@
   <nav class="nav" id="nav">
     <ul class="nav__links">
       <li><a href="#inicio" class="nav__link" data-i18n="nav.home">início</a></li>
-      <li><a href="#habilidades" class="nav__link" data-i18n="nav.skills">habilidades</a></li>
-      <li><a href="#experiencia" class="nav__link" data-i18n="nav.experience">experiência</a></li>
-      <li><a href="#portfolio" class="nav__link" data-i18n="nav.portfolio">portfólio</a></li>
-      <li><a href="#jornada" class="nav__link" data-i18n="nav.journey">jornada</a></li>
-      <li><a href="#biblioteca" class="nav__link" data-i18n="nav.library">biblioteca</a></li>
+      <li><a href="#servicos" class="nav__link" data-i18n="nav.services">serviços</a></li>
+      <li><a href="#portfolio" class="nav__link" data-i18n="nav.cases">casos</a></li>
+      <li><a href="#habilidades" class="nav__link" data-i18n="nav.stack">stack</a></li>
       <li><a href="#contato" class="nav__link" data-i18n="nav.contact">contato</a></li>
     </ul>
     <div class="nav__actions">
@@ -37,11 +35,9 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#inicio" class="mobile-menu__link" data-i18n="nav.home">início</a></li>
-      <li><a href="#habilidades" class="mobile-menu__link" data-i18n="nav.skills">habilidades</a></li>
-      <li><a href="#experiencia" class="mobile-menu__link" data-i18n="nav.experience">experiência</a></li>
-      <li><a href="#portfolio" class="mobile-menu__link" data-i18n="nav.portfolio">portfólio</a></li>
-      <li><a href="#jornada" class="mobile-menu__link" data-i18n="nav.journey">jornada</a></li>
-      <li><a href="#biblioteca" class="mobile-menu__link" data-i18n="nav.library">biblioteca</a></li>
+      <li><a href="#servicos" class="mobile-menu__link" data-i18n="nav.services">serviços</a></li>
+      <li><a href="#portfolio" class="mobile-menu__link" data-i18n="nav.cases">casos</a></li>
+      <li><a href="#habilidades" class="mobile-menu__link" data-i18n="nav.stack">stack</a></li>
       <li><a href="#contato" class="mobile-menu__link" data-i18n="nav.contact">contato</a></li>
     </ul>
     <div class="lang-switch lang-switch--mobile" role="group" data-i18n-attr="aria-label:aria.lang">
@@ -62,10 +58,8 @@
             <span data-i18n="hero.status">Disponível para projetos</span>
           </div>
           <h1 class="hero__name reveal-element">Bruno Miotto</h1>
-          <p class="hero__role reveal-element" data-i18n="hero.role">Desenvolvedor & Estudante de Engenharia de Software</p>
-          <p class="hero__summary reveal-element" data-i18n-html="hero.summary">
-            <strong>21 anos, de Caxias do Sul — RS.</strong>
-          </p>
+          <p class="hero__role reveal-element" data-i18n="hero.role">Full-Stack Developer · IoT Monitoring & Business Systems</p>
+          <p class="hero__pitch reveal-element" data-i18n="hero.pitch">Entrego sistemas prontos para produção — do diagnóstico ao deploy, com monitoramento em tempo real e suporte contínuo.</p>
           <div class="hero__meta reveal-element">
             <div class="hero__meta-item">
               <img src="https://www.google.com/s2/favicons?sz=32&domain=windel.com.br" alt="Windel" class="hero__meta-favicon" />
@@ -92,8 +86,8 @@
             </div>
           </div>
           <div class="hero__cta reveal-element">
-            <a href="#habilidades" class="btn btn--primary" data-i18n="hero.cta.skills">Ver habilidades</a>
-            <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="hero.cta.talk">Fale comigo</a>
+            <a href="#portfolio" class="btn btn--primary" data-i18n="hero.cta.cases">Ver casos de sucesso</a>
+            <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="hero.cta.talk">Agendar conversa</a>
           </div>
         </div>
         <div class="hero__photo reveal-element">
@@ -102,11 +96,136 @@
       </div>
     </section>
 
+    <!-- SERVIÇOS -->
+    <section class="section section--alt" id="servicos">
+      <div class="container">
+        <h2 class="section__title reveal-element" data-i18n="services.title">O que eu entrego</h2>
+        <p class="section__sub reveal-element" data-i18n="services.sub">Não vendo código solto — vendo resultado de negócio com sistema funcionando em produção.</p>
+
+        <div class="services__list">
+          <article class="service-row reveal-element">
+            <div class="service-row__left">
+              <span class="service-row__num">01</span>
+              <h3 class="service-row__title" data-i18n="services.s1.title">Sistemas Full-Stack</h3>
+            </div>
+            <p class="service-row__desc" data-i18n="services.s1.desc">Dashboards, APIs e banco de dados prontos para uso. Do MVP ao sistema escalável com autenticação e deploy.</p>
+          </article>
+          <article class="service-row reveal-element">
+            <div class="service-row__left">
+              <span class="service-row__num">02</span>
+              <h3 class="service-row__title" data-i18n="services.s2.title">Monitoramento IoT</h3>
+            </div>
+            <p class="service-row__desc" data-i18n="services.s2.desc">Conecto CLPs e sensores a dashboards ao vivo. Alertas automáticos, histórico confiável e rastreabilidade por ciclo.</p>
+          </article>
+          <article class="service-row reveal-element">
+            <div class="service-row__left">
+              <span class="service-row__num">03</span>
+              <h3 class="service-row__title" data-i18n="services.s3.title">ERP & Integrações</h3>
+            </div>
+            <p class="service-row__desc" data-i18n="services.s3.desc">Otimização de sistemas legados Delphi/Firebird, correções estruturais e integração com APIs, webhooks e automações.</p>
+          </article>
+          <article class="service-row reveal-element">
+            <div class="service-row__left">
+              <span class="service-row__num">04</span>
+              <h3 class="service-row__title" data-i18n="services.s4.title">Manutenção & Suporte</h3>
+            </div>
+            <p class="service-row__desc" data-i18n="services.s4.desc">Retainer mensal com correções, melhorias incrementais, monitoramento de uptime e suporte direto via WhatsApp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS DE SUCESSO -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <h2 class="section__title reveal-element" data-i18n="portfolio.title">Casos de Sucesso</h2>
+        <p class="section__sub reveal-element" data-i18n="portfolio.sub">Problema real → solução entregue → impacto mensurável.</p>
+
+        <div class="portfolio__grid portfolio__grid--cases">
+          <a href="projects/habilita-imp.html" class="portfolio-card reveal-element">
+            <div class="portfolio-card__cover">
+              <img src="assets/portfolio/habilita-imp/dashboard.png" alt="Dashboard do Habilita IMP" loading="lazy" />
+            </div>
+            <div class="portfolio-card__body">
+              <div class="case-header">
+                <span class="case-header__badge" data-i18n="portfolio.habilita.badge">Case · IoT Industrial</span>
+                <h3 class="portfolio-card__title">Habilita I.M.P.</h3>
+                <p class="case-header__problem" data-i18n="portfolio.habilita.before">Dados espalhados em PLCs, sem visibilidade central nem alertas em tempo real no chão de fábrica.</p>
+              </div>
+              <div class="portfolio-card__metrics">
+                <div class="metric-pill">
+                  <span class="metric-pill__value">~60%</span>
+                  <span class="metric-pill__label" data-i18n="portfolio.habilita.m1">menos diagnóstico</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__value">24/7</span>
+                  <span class="metric-pill__label" data-i18n="portfolio.habilita.m2">monitoramento</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__value">100%</span>
+                  <span class="metric-pill__label" data-i18n="portfolio.habilita.m3">rastreio/ciclo</span>
+                </div>
+              </div>
+              <span class="portfolio-card__cta" data-i18n="portfolio.cta">Ver case completo →</span>
+            </div>
+          </a>
+
+          <a href="projects/fleet-ops.html" class="portfolio-card reveal-element">
+            <div class="portfolio-card__cover">
+              <img src="assets/portfolio/fleet-ops/visao-geral.png" alt="Dashboard do FleetOps" loading="lazy" />
+            </div>
+            <div class="portfolio-card__body">
+              <div class="case-header">
+                <span class="case-header__badge" data-i18n="portfolio.fleet.badge">Case · SaaS PWA</span>
+                <h3 class="portfolio-card__title">FleetOps</h3>
+                <p class="case-header__problem" data-i18n="portfolio.fleet.before">Donos de transportadoras sem visão diária de lucro, custos e gargalos — tudo em planilhas.</p>
+              </div>
+              <div class="portfolio-card__metrics">
+                <div class="metric-pill">
+                  <span class="metric-pill__value">1 painel</span>
+                  <span class="metric-pill__label" data-i18n="portfolio.fleet.m1">substitui planilhas</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__value">DRE</span>
+                  <span class="metric-pill__label" data-i18n="portfolio.fleet.m2">CSV/PDF</span>
+                </div>
+              </div>
+              <span class="portfolio-card__cta" data-i18n="portfolio.cta">Ver case completo →</span>
+            </div>
+          </a>
+
+          <a href="projects/habilita-website.html" class="portfolio-card reveal-element">
+            <div class="portfolio-card__cover">
+              <img src="assets/portfolio/habilita-website/hero.png" alt="Site institucional Habilita" loading="lazy" />
+            </div>
+            <div class="portfolio-card__body">
+              <div class="case-header">
+                <span class="case-header__badge" data-i18n="portfolio.website.badge">Case · Marketing</span>
+                <h3 class="portfolio-card__title">Habilita Website</h3>
+                <p class="case-header__problem" data-i18n="portfolio.website.before">Empresa de automação industrial sem presença digital que transmitisse credibilidade técnica para decisores.</p>
+              </div>
+              <div class="portfolio-card__metrics">
+                <div class="metric-pill">
+                  <span class="metric-pill__value">Live</span>
+                  <span class="metric-pill__label" data-i18n="portfolio.website.m1">em produção</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-pill__value">&lt;2s</span>
+                  <span class="metric-pill__label" data-i18n="portfolio.website.m2">carregamento</span>
+                </div>
+              </div>
+              <span class="portfolio-card__cta" data-i18n="portfolio.cta">Ver case completo →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- HABILIDADES -->
     <section class="section" id="habilidades">
       <div class="container">
-        <h2 class="section__title reveal-element" data-i18n="skills.title">Habilidades</h2>
-        <p class="section__sub reveal-element" data-i18n="skills.sub">Ferramentas, linguagens e tecnologias que fazem parte do meu dia a dia.</p>
+        <h2 class="section__title reveal-element" data-i18n="skills.title">Stack Técnica</h2>
+        <p class="section__sub reveal-element" data-i18n="skills.sub">Tecnologias que uso para entregar sistemas em produção — não é currículo, é ferramenta de entrega.</p>
 
         <div class="skills__sections">
 
@@ -327,7 +446,7 @@
     <section class="section section--alt" id="experiencia">
       <div class="container">
         <h2 class="section__title reveal-element" data-i18n="xp.title">Experiência & Formação</h2>
-        <p class="section__sub reveal-element" data-i18n="xp.sub">Onde trabalho e estudo.</p>
+        <p class="section__sub reveal-element" data-i18n="xp.sub">Base profissional que sustenta cada entrega — ERP no dia a dia e engenharia na faculdade.</p>
 
         <div class="xp-grid">
           <div class="xp-card reveal-element">
@@ -338,7 +457,7 @@
               <span class="xp-card__type" data-i18n="xp.work">Trabalho</span>
               <h3 class="xp-card__name">Windel Sistemas</h3>
               <p class="xp-card__role" data-i18n="xp.windel.role">Desenvolvedor Delphi</p>
-              <p class="xp-card__desc" data-i18n="xp.windel.desc">Otimização de sistemas e aplicação de correções estruturais em software de gestão ERP para micro e pequenas empresas. Caxias do Sul, RS.</p>
+              <p class="xp-card__desc" data-i18n="xp.windel.desc">Otimização de ERP Delphi/Firebird para micro e pequenas empresas — correções estruturais que reduzem bugs recorrentes e melhoram performance em produção.</p>
             </div>
           </div>
           <div class="xp-card reveal-element">
@@ -352,67 +471,6 @@
               <p class="xp-card__desc" data-i18n="xp.ucs.desc">Ingressando no 2º semestre. Formação técnica e teórica em desenvolvimento, arquitetura de software e engenharia de sistemas.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFÓLIO -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <h2 class="section__title reveal-element" data-i18n="portfolio.title">Portfólio</h2>
-        <p class="section__sub reveal-element" data-i18n="portfolio.sub">Projetos que desenvolvi — do conceito à entrega.</p>
-
-        <div class="portfolio__grid">
-          <a href="projects/habilita-imp.html" class="portfolio-card reveal-element">
-            <div class="portfolio-card__cover">
-              <img src="assets/portfolio/habilita-imp/dashboard.png" alt="Dashboard do Habilita IMP" loading="lazy" />
-            </div>
-            <div class="portfolio-card__body">
-              <h3 class="portfolio-card__title">Habilita I.M.P.</h3>
-              <p class="portfolio-card__desc" data-i18n="portfolio.habilita.desc">Plataforma full-stack de monitoramento industrial para autoclaves — ingestão MQTT, persistência no Supabase, API REST, dashboards em tempo real via WebSocket e rastreabilidade de pneus por ciclo.</p>
-              <div class="portfolio-card__tags">
-                <span class="portfolio-card__tag">React</span>
-                <span class="portfolio-card__tag">Node.js</span>
-                <span class="portfolio-card__tag">MQTT</span>
-                <span class="portfolio-card__tag">Supabase</span>
-                <span class="portfolio-card__tag">Socket.IO</span>
-              </div>
-              <span class="portfolio-card__cta" data-i18n="portfolio.cta">Ver projeto →</span>
-            </div>
-          </a>
-          <a href="projects/fleet-ops.html" class="portfolio-card reveal-element">
-            <div class="portfolio-card__cover">
-              <img src="assets/portfolio/fleet-ops/visao-geral.png" alt="Dashboard do FleetOps" loading="lazy" />
-            </div>
-            <div class="portfolio-card__body">
-              <h3 class="portfolio-card__title">FleetOps</h3>
-              <p class="portfolio-card__desc" data-i18n="portfolio.fleet.desc">PWA de gestão financeira e operacional para transporte de passageiros — frota, motoristas, linhas, receitas, custos, DRE e KPIs em tempo real.</p>
-              <div class="portfolio-card__tags">
-                <span class="portfolio-card__tag">React</span>
-                <span class="portfolio-card__tag">TypeScript</span>
-                <span class="portfolio-card__tag">Supabase</span>
-                <span class="portfolio-card__tag">PWA</span>
-                <span class="portfolio-card__tag">Tailwind</span>
-              </div>
-              <span class="portfolio-card__cta" data-i18n="portfolio.cta">Ver projeto →</span>
-            </div>
-          </a>
-          <a href="projects/habilita-website.html" class="portfolio-card reveal-element">
-            <div class="portfolio-card__cover">
-              <img src="assets/portfolio/habilita-website/hero.png" alt="Site institucional Habilita" loading="lazy" />
-            </div>
-            <div class="portfolio-card__body">
-              <h3 class="portfolio-card__title">Habilita Website</h3>
-              <p class="portfolio-card__desc" data-i18n="portfolio.website.desc">Site institucional one-page para empresa de automação industrial — hero animado, serviços, portfólio, trajetória, processo e contato com cursor customizado.</p>
-              <div class="portfolio-card__tags">
-                <span class="portfolio-card__tag">React</span>
-                <span class="portfolio-card__tag">TypeScript</span>
-                <span class="portfolio-card__tag">Vite</span>
-                <span class="portfolio-card__tag">Tailwind</span>
-              </div>
-              <span class="portfolio-card__cta" data-i18n="portfolio.cta">Ver projeto →</span>
-            </div>
-          </a>
         </div>
       </div>
     </section>
@@ -565,7 +623,8 @@
 
   <footer class="footer" id="contato">
     <div class="container">
-      <p class="footer__title reveal-element" data-i18n="footer.title">Vamos conversar.</p>
+      <p class="footer__title reveal-element" data-i18n="footer.title">Pronto para o próximo projeto?</p>
+      <p class="footer__sub reveal-element" data-i18n="footer.sub">Entre em Contato!</p>
       <div class="footer__links reveal-element">
         <a href="https://wa.me/5554999252321" target="_blank" rel="noopener" class="footer__link">WhatsApp ↗</a>
         <a href="tel:+5554999252321" class="footer__link">+55 (54) 99925-2321</a>
